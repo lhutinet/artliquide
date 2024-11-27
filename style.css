@@ -1,0 +1,174 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+/* test  */
+body {
+
+    background: linear-gradient(to right, rgb(0, 117, 206) 0%, rgb(44, 161, 164) 50%, rgb(0, 117, 206) 100%);
+
+}
+
+/* --------------------NAV------------------------------- */
+iframe {
+    width: 100%;
+    z-index: 100;
+
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.068);
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.11);
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover {
+    color: orange;
+    border-bottom: 2px solid gold;
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background: linear-gradient(to right, rgb(0, 117, 206) 0%, rgb(44, 161, 164) 75%, rgb(0, 117, 206) 100%);
+    ;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: RGBa(200, 200, 200, 0.1);
+}
+
+.deroulant>a::after {
+    content: " ▼";
+    font-size: 12px;
+}
+
+.conteneur {
+    margin: 20px 20px;
+    height: 1500px;
+}
+
+/* fin nav------------------------- */
+
+h1 {
+    text-align: center;
+    margin: 100px auto;
+    text-shadow: 21px 16px 5px rgba(28, 110, 164, 0.52);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around
+}
+
+.containerPhoto {
+    display: flex;
+
+}
+
+.containerPhoto {
+
+    display: flex;
+
+    z-index: 0;
+    width: 320px;
+    height: 480px;
+    flex-direction: column;
+    filter: blur(1px);
+}
+
+.containerPhoto:hover {
+
+    filter: blur(0);
+}
+
+#imgGoutte {
+    min-width: 100%;
+    height: 100%;
+    /* background: red; */
+    background: url(/ARTLIQUIDE/img/ARTLIQ/21-01-10-lh6608.jpg) center/cover;
+    box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+
+}
+
+#imgVoyage {
+    min-width: 100%;
+    height: 100%;
+    background: url(/ARTLIQUIDE/img/ARTLIQ/lh3460.jpg) center/cover;
+    box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+
+}
+
+#imgMystère {
+    min-width: 100%;
+    height: 100%;
+    background: url(/ARTLIQUIDE/img/ARTLIQ/lh2510-avec-accentuation-bruit.jpg) center/cover;
+    box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+
+}
+
+.container a {
+    color: rgb(26, 26, 26);
+    margin: 10px;
+    text-align: center;
+
+}
+
+.container a:hover {
+
+    color: rgb(26, 26, 26);
+    cursor: pointer;
+
+}
