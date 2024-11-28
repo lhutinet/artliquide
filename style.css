@@ -18,7 +18,7 @@ body {
 h1 {
   font-family: "Bad Script", serif;
   text-align: center;
-  margin: 100px auto;
+  margin: 50px auto;
   text-shadow: 21px 16px 5px rgba(28, 110, 164, 0.52);
 }
 
@@ -100,6 +100,14 @@ nav .deroulant > a::after {
   z-index: 1000;
 }
 
+#social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  right: 25px;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,7 +134,7 @@ nav .deroulant > a::after {
 }
 .container a {
   color: rgb(26, 26, 26);
-  margin: 10px;
+  margin: 20px;
   text-align: center;
 }
 .container a :hover {
@@ -157,4 +165,13 @@ nav .deroulant > a::after {
   background: url(./img/lh2510-avec-accentuation-bruit.jpg) center/cover;
   -webkit-box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
           box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+}
+
+* .bande {
+  width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
