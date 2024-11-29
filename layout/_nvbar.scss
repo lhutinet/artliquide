@@ -80,8 +80,18 @@ nav {
     z-index: 1000;
   }
 }
-#social {
-  display: flex;
-  width: 25%;
-  right: 25px;
+#navSocial {
+  #social {
+    padding: 2px;
+    display: flex;
+    width: 150px;
+    right: 25px;
+    transform: translateX(50%);
+    a {
+      color: black;
+      :hover {
+        color: blueviolet;
+      }
+    }
+  }
 }

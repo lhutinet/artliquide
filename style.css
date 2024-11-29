@@ -100,12 +100,21 @@ nav .deroulant > a::after {
   z-index: 1000;
 }
 
-#social {
+#navSocial #social {
+  padding: 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25%;
+  width: 150px;
   right: 25px;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+#navSocial #social a {
+  color: black;
+}
+#navSocial #social a :hover {
+  color: blueviolet;
 }
 
 .container {
@@ -167,11 +176,39 @@ nav .deroulant > a::after {
           box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
 }
 
-* .bande {
-  width: 100%;
-  height: 70px;
-  background: rgba(0, 0, 255, 0.1);
+.bande {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 100%;
+  height: 70px;
+  background: rgba(0, 0, 255, 0.1);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.bande p {
+  text-align: right;
+  padding: 10px;
+}
+.bande p a {
+  color: black;
+  text-align: left;
+  padding: 10px;
+}
+.bande p a :hover {
+  color: blueviolet;
+}
+.bande ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 150px 20px 0;
+  width: 150px;
+}
+.bande ul a {
+  color: black;
+}
+.bande ul a :hover {
+  color: blueviolet;
 }/*# sourceMappingURL=style.css.map */
