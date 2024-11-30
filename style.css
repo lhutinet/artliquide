@@ -117,6 +117,77 @@ nav .deroulant > a::after {
   color: blueviolet;
 }
 
+.mystere h2 {
+  text-align: center;
+  color: black;
+  margin: 20px auto;
+  font-size: 2rem;
+}
+.mystere p {
+  font-size: 1.5rem;
+}
+.mystere #nombreimage {
+  margin: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.mystere main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mystere form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.mystere .containerPhoto {
+  border: 10px solid white;
+  width: 400px;
+  height: 600px;
+  /* background: rgb(60, 191, 238); */
+  /* background: "src:"./lh1634-2.webp"; */
+  margin: 20px;
+}
+.mystere label {
+  margin: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.mystere input {
+  min-width: 300px;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.mystere button {
+  width: 250px;
+  color: rgb(255, 255, 255);
+  font-size: 21px;
+  line-height: 21px;
+  padding: 9px;
+  margin: 20px auto;
+  border-radius: 16px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(28, 110, 164)), color-stop(50%, rgb(35, 136, 203)), to(rgb(20, 78, 117)));
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.48) 10px 5px 15px 0px;
+          box-shadow: rgba(0, 0, 0, 0.48) 10px 5px 15px 0px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;

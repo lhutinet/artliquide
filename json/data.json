@@ -1,0 +1,34 @@
+{
+  "fiches": [
+    {
+      "image": "./lh1634-2.webp",
+      "reponse": "fraise",
+      "indice1": "on y est quand on est perdu",
+      "indice2": "tout rouge"
+    },
+    {
+      "image": "./lh1812.webp",
+      "reponse": "kinder surprise",
+      "indice1": "A monter parfois",
+      "indice2": "toute ma jeunesse"
+    },
+    {
+      "image": "./lh1876.webp",
+      "reponse": "oeuf",
+      "indice1": "un ovale",
+      "indice2": "oui ma poule"
+    },
+    {
+      "image": "./lh1886.webp",
+      "reponse": "carton",
+      "indice1": "marche pour un accident",
+      "indice2": "matiere de valise "
+    },
+    {
+      "image": "./lh1979.webp",
+      "reponse": "bulle",
+      "indice1": "dans l'eau",
+      "indice2": "de l'air"
+    }
+  ]
+}
