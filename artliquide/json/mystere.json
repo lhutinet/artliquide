@@ -1,0 +1,172 @@
+{
+  "fiches": [
+    {
+      "indice": "1",
+      "image": "./lh1634-2.webp",
+      "reponse": "fraise",
+      "indice1": "on y est quand on est perdu",
+      "indice2": "tout rouge"
+    },
+    {
+      "indice": "2",
+      "image": "./lh1812.webp",
+      "reponse": "kinder surprise",
+      "indice1": "A monter parfois",
+      "indice2": "toute ma jeunesse"
+    },
+    {
+      "indice": "3",
+      "image": "./lh1876.webp",
+      "reponse": "oeuf",
+      "indice1": "un ovale",
+      "indice2": "oui ma poule"
+    },
+    {
+      "indice": "4",
+      "image": "./lh1886.webp",
+      "reponse": "carton",
+      "indice1": "marche pour un accident",
+      "indice2": "matiere de valise "
+    },
+    {
+      "indice": "5",
+      "image": "./lh1620.webp",
+      "reponse": "fraise",
+      "indice1": "un fruit",
+      "indice2": "tagada"
+    },
+    {
+      "indice": "6",
+      "image": "./lh1639.webp",
+      "reponse": "noix",
+      "indice1": "A coque",
+      "indice2": "pas de cajoux"
+    },
+    {
+      "indice": "7",
+      "image": "./lh1672.webp",
+      "reponse": "surface",
+      "indice1": "je sais plus",
+      "indice2": "ecrit surface"
+    },
+    {
+      "indice": "8",
+      "image": "./lh1700.webp",
+      "reponse": "pomme",
+      "indice1": "on y tombe",
+      "indice2": "pour tell"
+    },
+    {
+      "indice": "9",
+      "image": "./lh1721.webp",
+      "reponse": "canette",
+      "indice1": "fait pshit",
+      "indice2": "33cl"
+    },
+    {
+      "indice": "10",
+      "image": "./lh1740.webp",
+      "reponse": "saucisson",
+      "indice1": "a ouai pour les copains",
+      "indice2": "sa sent bon"
+    },
+    {
+      "indice": "11",
+      "image": "./lh1752.webp",
+      "reponse": "pain",
+      "indice1": "avec du saucisson",
+      "indice2": "l'essentiel"
+    },
+    {
+      "indice": "12",
+      "image": "./lh1958.webp",
+      "reponse": "tictac",
+      "indice1": "dans une petite boite",
+      "indice2": "ça rafraichi"
+    },
+    {
+      "indice": "13",
+      "image": "./lh1999.webp",
+      "reponse": "gomme",
+      "indice1": "avec le crayon",
+      "indice2": "hop plus rien"
+    },
+    {
+      "indice": "14",
+      "image": "./lh2016.webp",
+      "reponse": "collant",
+      "indice1": "sur la peau",
+      "indice2": "s'etend"
+    },
+    {
+      "indice": "15",
+      "image": "./lh2028.webp",
+      "reponse": "polaire",
+      "indice1": "tient chaud",
+      "indice2": "pour coocooner"
+    },
+    {
+      "indice": "16",
+      "image": "./lh2100.webp",
+      "reponse": "fleur ",
+      "indice1": "je sais plus ",
+      "indice2": "ecrit fleur"
+    },
+    {
+      "indice": "17",
+      "image": "./lh2107.webp",
+      "reponse": "rayure",
+      "indice1": "je ne sais plus ",
+      "indice2": "ecrit rayure"
+    },
+    {
+      "indice": "18",
+      "image": "./lh2111.webp",
+      "reponse": "vis",
+      "indice1": "ca pique",
+      "indice2": "pour relié"
+    },
+    {
+      "indice": "19",
+      "image": "./lh2116.webp",
+      "reponse": "vis",
+      "indice1": "on la tourne ",
+      "indice2": "un pas"
+    },
+    {
+      "indice": "20",
+      "image": "./lh2157.webp",
+      "reponse": "Criterium",
+      "indice1": "HB parfois ",
+      "indice2": "ou 0.5mm"
+    },
+    {
+      "indice": "21",
+      "image": "./lh2446.webp",
+      "reponse": "queue de tomate",
+      "indice1": "tout rouge ",
+      "indice2": "une tige"
+    },
+    {
+      "indice": "22",
+      "image": "./lh2489.webp",
+      "reponse": "pissenlit",
+      "indice1": "apres il s'envole",
+      "indice2": "dans le jardin"
+    },
+    {
+      "indice": "23",
+      "image": "./lh2510.webp",
+      "reponse": "pissenlit",
+      "indice1": "pas la plus aimée ",
+      "indice2": "j'aime en salade"
+    },
+    {
+      "indice": "24",
+      "image": "./mystere-01.webp",
+      "reponse": "avocat",
+      "indice1": "du mexique",
+      "indice2": "gros noyau"
+    }
+  ]
+}

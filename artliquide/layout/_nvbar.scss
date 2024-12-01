@@ -1,0 +1,99 @@
+nav {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background: red;
+  background-color: rgba(255, 255, 255, 0.068);
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  font-family: "Merriweather", serif;
+
+  ul {
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.11);
+    z-index: 1000;
+  }
+
+  ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+  }
+
+  ul::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+    position: sticky;
+    z-index: 1000;
+
+    :hover {
+      color: orange;
+      border-bottom: 2px solid gold;
+    }
+  }
+  > ul li:hover .sous {
+    display: block;
+  }
+
+  .sous {
+    display: none;
+    box-shadow: 0px 1px 2px #ccc;
+    background: linear-gradient(
+      to right,
+      rgb(0, 117, 206) 0%,
+      rgb(44, 161, 164) 75%,
+      rgb(0, 117, 206) 100%
+    );
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+
+    li {
+      float: none;
+      width: 100%;
+      text-align: left;
+    }
+
+    a {
+      padding: 10px;
+      border-bottom: none;
+
+      :hover {
+        border-bottom: none;
+        background-color: RGBa(200, 200, 200, 0.1);
+      }
+    }
+  }
+
+  .deroulant > a::after {
+    content: " ▼";
+    font-size: 12px;
+    z-index: 1000;
+  }
+}
+#navSocial {
+  #social {
+    padding: 2px;
+    display: flex;
+    width: 150px;
+    right: 25px;
+    transform: translateX(50%);
+    a {
+      color: black;
+      :hover {
+        color: blueviolet;
+      }
+    }
+  }
+}
