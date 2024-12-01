@@ -44,6 +44,12 @@
     border-radius: 20px;
     font-size: 1.2rem;
     text-align: center;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 1);
+
+    :focus {
+      border: none;
+      border: 0;
+    }
   }
   button {
     width: 250px;

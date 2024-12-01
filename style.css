@@ -165,6 +165,12 @@ nav .deroulant > a::after {
   border-radius: 20px;
   font-size: 1.2rem;
   text-align: center;
+  -webkit-box-shadow: inset 2px 2px 5px rgb(0, 0, 0);
+          box-shadow: inset 2px 2px 5px rgb(0, 0, 0);
+}
+.mystere input :focus {
+  border: none;
+  border: 0;
 }
 .mystere button {
   width: 250px;
