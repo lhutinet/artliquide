@@ -1,0 +1,37 @@
+#mainContact {
+  font-size: 1.2rem;
+  display: flex;
+  max-width: 50%;
+  height: 300px;
+  margin: 150px auto;
+  align-items: center;
+  margin: 200px auto;
+
+  input {
+    width: 90%;
+    height: 40px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    z-index: 1;
+    position: sticky;
+
+    :hover {
+      transform: scale(1.2);
+      background: red;
+    }
+  }
+
+  textarea {
+    width: 90%;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    :hover {
+      transform: scale(1.2);
+      background: red;
+    }
+  }
+}

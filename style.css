@@ -30,19 +30,48 @@ iframe {
   height: 50px;
 }
 
+button {
+  z-index: 1000;
+  width: 250px;
+  color: rgb(255, 255, 255);
+  font-size: 21px;
+  line-height: 21px;
+  padding: 9px;
+  margin: 20px auto;
+  border-radius: 16px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(28, 110, 164)), color-stop(50%, rgb(35, 136, 203)), to(rgb(20, 78, 117)));
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.48) 10px 5px 15px 0px;
+          box-shadow: rgba(0, 0, 0, 0.48) 10px 5px 15px 0px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}
+button :hover {
+  background: red;
+}
+
 nav {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 100%;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.068);
+  background: transparent;
   position: sticky;
   top: 0px;
-  z-index: 1000;
+  z-index: 100;
   font-family: "Merriweather", serif;
 }
 nav ul {
   list-style-type: none;
-  background: rgba(255, 255, 255, 0.11);
-  z-index: 1000;
+  background: transparent;
+  z-index: 100;
 }
 nav ul li {
   float: left;
@@ -50,7 +79,7 @@ nav ul li {
   text-align: center;
   position: relative;
 }
-nav ul::after {
+nav ul ::after {
   content: "";
   display: table;
   clear: both;
@@ -62,7 +91,7 @@ nav a {
   border-bottom: 2px solid transparent;
   padding: 10px 0px;
   position: sticky;
-  z-index: 1000;
+  z-index: 100;
 }
 nav a :hover {
   color: orange;
@@ -79,7 +108,7 @@ nav .sous {
   background: linear-gradient(to right, rgb(0, 117, 206) 0%, rgb(44, 161, 164) 75%, rgb(0, 117, 206) 100%);
   position: absolute;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
 }
 nav .sous li {
   float: none;
@@ -97,7 +126,7 @@ nav .sous a :hover {
 nav .deroulant > a::after {
   content: " ▼";
   font-size: 12px;
-  z-index: 1000;
+  z-index: 100;
 }
 
 #navSocial #social {
@@ -109,6 +138,7 @@ nav .deroulant > a::after {
   right: 25px;
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
+  z-index: 1;
 }
 #navSocial #social a {
   color: black;
@@ -171,27 +201,6 @@ nav .deroulant > a::after {
 .mystere input :focus {
   border: none;
   border: 0;
-}
-.mystere button {
-  width: 250px;
-  color: rgb(255, 255, 255);
-  font-size: 21px;
-  line-height: 21px;
-  padding: 9px;
-  margin: 20px auto;
-  border-radius: 16px;
-  font-family: Georgia, serif;
-  font-weight: normal;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgb(28, 110, 164)), color-stop(50%, rgb(35, 136, 203)), to(rgb(20, 78, 117)));
-  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.48) 10px 5px 15px 0px;
-          box-shadow: rgba(0, 0, 0, 0.48) 10px 5px 15px 0px;
-  border: 2px solid rgb(28, 110, 164);
-  display: inline-block;
 }
 
 .container {
@@ -288,4 +297,45 @@ nav .deroulant > a::after {
 }
 .bande ul a :hover {
   color: blueviolet;
+}
+
+#mainContact {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+  height: 300px;
+  margin: 150px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 200px auto;
+}
+#mainContact input {
+  width: 90%;
+  height: 40px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  z-index: 1;
+  position: sticky;
+}
+#mainContact input :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: red;
+}
+#mainContact textarea {
+  width: 90%;
+  height: 200px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+#mainContact textarea :hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background: red;
 }/*# sourceMappingURL=style.css.map */
