@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,7 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-DLX297GV89"
     ></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -22,28 +23,20 @@
 
       gtag("config", "G-DLX297GV89");
     </script>
-    <title>jeu mystère</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- google index --------------------------------------------------->
+    <title>
+      art liquide photographie, Laurent Hutinet, photographe spécialisé dans les
+      collisions de gouttes d'eau et de voyage
+    </title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div id="navbar"></div>
     <script src="./script/navb.js"></script>
-    <main class="mystere">
-      <h1>jeu mystère</h1>
-      <div class="container">
-        <form action="">
-          <span id="nombreimage"></span>
-          <div class="containerPhoto"></div>
-          <p id="infoRes"></p>
-          <p id="indice">indice</p>
-          <label for="inputRes">votre reponse</label>
-          <input type="text" id="inputRes" autocomplete="off" />
-          <button type="submit">je valide</button>
+    <h1>--Mes Voyages--</h1>
+    <div class="container" id="photoContainer"></div>
 
-          <p id="resuScore">mon score est de</p>
-        </form>
-      </div>
-    </main>
-    <script src="./script/mystere.js"></script>
+    <script src="index.js"></script>
+    <script src="./script/voyages.js"></script>
   </body>
 </html>

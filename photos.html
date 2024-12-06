@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./img/wp-1612609046614.jpg"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DLX297GV89"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DLX297GV89");
+    </script>
+    <title>
+      art liquide photographie, Laurent Hutinet, photographe spécialisé dans les
+      collisions de gouttes d'eau et de voyage
+    </title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <main>
+      <script src="./script/navb.js"></script>
+      <!-- <div class="filter-container">
+        <button id="filter-personnage" data-filter="voiture">voiture</button>
+        <button id="filter-montage" data-filter="couleur">couleur</button>
+        <select id="location-filter">
+          <option value="">Tous les lieux</option>
+          <option value="village">Village</option>
+          <option value="temple">Temple</option>
+          <option value="plage">Plage</option>
+          <option value="rue">Rue</option>
+        </select>
+      </div> -->
+
+      <div id="zoom-container" class="zoom-container">
+        <button id="prev-photo" class="zoom-arrow">◀</button>
+        <img id="zoom-img" class="zoom-img" src="" alt="Image agrandie" />
+        <button id="next-photo" class="zoom-arrow">▶</button>
+      </div>
+
+      <div id="gallery-container" class="gallery-container"></div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

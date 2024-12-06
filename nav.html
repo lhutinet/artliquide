@@ -10,59 +10,94 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DLX297GV89"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DLX297GV89");
+    </script>
     <title>navbar</title>
-    <link rel="stylesheet" href="/ARTLIQUIDE/style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <nav>
       <ul>
         <li>
           <a href="./index.html" target="_parent">Art liquide photographie</a>
         </li>
         <li class="deroulant">
-          <a href="http://dd.fr" target="_parent">Goutte d'eau</a>
+          <a href="#" data-category="gouttes" target="_parent">Gouttes d'eau</a>
           <ul class="sous">
+            <li><a href="#" data-category="photos">Projet expo</a></li>
             <li>
-              <a href="http://" target="_parent">Personnage et montage</a>
+              <a href="#" data-category="personnage">Personnages et montages</a>
             </li>
-            <li><a href="http://">Mon histoire de gouttes</a></li>
-            <li><a href="http://">projet expo</a></li>
-            <li><a href="http://">mes video</a></li>
-            <li><a href="http://">animation 3d</a></li>
-            <li><a href="http://">et pour en voir encore</a></li>
+            <!-- <li><a href="http://">Mon histoire de gouttes</a></li> -->
+            <!-- <li><a href="#" data-category="photos">Projet expo</a></li> -->
+            <!-- <li><a href="http://">mes video</a></li> -->
+            <!-- <li><a href="http://">animation 3d</a></li> -->
+            <!-- <li><a href="http://">et pour en voir encore</a></li> -->
           </ul>
         </li>
         <li class="deroulant">
-          <a href="http://dd.fr">Mes voyage</a>
+          <a href="./voyages.html">Mes voyages</a>
           <ul class="sous">
-            <li><a href="http://">Cuba</a></li>
-            <li><a href="http://">maroc</a></li>
-            <li><a href="http://">Kenya</a></li>
-            <li><a href="http://">Islande</a></li>
-            <li><a href="http://">La reunion</a></li>
-            <li><a href="http://">iles lofoten</a></li>
-            <li><a href="http://">Cambodge</a></li>
-            <li><a href="http://">Bretagne</a></li>
+            <li><a href="#" data-category="cambodge">Cambodge</a></li>
+            <li><a href="#" data-category="cuba">cuba</a></li>
+            <li><a href="#" data-category="maroc">maroc</a></li>
+            <li><a href="#" data-category="kenya">kenya</a></li>
+            <li><a href="#" data-category="islande">islande</a></li>
+            <li><a href="#" data-category="laReunion">la reunion</a></li>
+            <li><a href="#" data-category="lofoten">Iles lofoten</a></li>
+            <li><a href="#" data-category="bretagne">bretagne</a></li>
+            <li><a href="#" data-category="bretagne2">bretagne</a></li>
           </ul>
         </li>
-        <li><a href="./mystere.html">Mystere</a></li>
-        <li><a href="./contact.html">contact</a></li>
+        <li><a href="./mystere.html" target="_parent">Mystere</a></li>
+        <li><a href="./contact.html" target="_parent">Contact</a></li>
+        <li><a href="./boutique.html" target="_parent">Boutique</a></li>
       </ul>
     </nav>
     <div id="navSocial">
       <ul id="social">
         <li>
-          <a href="https://www.facebook.com/artliquidephoto/"
+          <a
+            href="https://www.facebook.com/artliquidephoto/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="facebook"
             ><i class="fab fa-facebook"></i
           ></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/art_liquide/ "
+          <a
+            href="https://www.instagram.com/art_liquide/ "
+            target="_blank"
+            rel="noopener noreferrer"
+            title="instagram"
             ><i class="fa-brands fa-instagram"></i
           ></a>
         </li>
         <li>
-          <a href="https://www.tiktok.com/@laurenthutinet "
+          <a
+            href="https://www.tiktok.com/@laurenthutinet "
+            target="_blank"
+            rel="noopener noreferrer"
+            title="tik tok"
             ><i class="fa-brands fa-tiktok"></i
           ></a>
         </li>

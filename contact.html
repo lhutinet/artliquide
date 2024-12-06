@@ -8,6 +8,20 @@
       type="image/png"
       href="./img/wp-1612609046614.jpg"
     />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DLX297GV89"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DLX297GV89");
+    </script>
     <title>contact</title>
 
     <link rel="stylesheet" href="style.css" />
@@ -17,15 +31,35 @@
     <script src="./script/navb.js"></script>
 
     <main id="mainContact">
-      <form name="contact" netlify>
+      <form
+        name="contact"
+        method="POST"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
+        <!-- <p class="hidden">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" />
+          </label>
+        </p> -->
         <h2>Envoyez-moi un message</h2>
         <p>
           <label>
-            <input type="text" name="Prénom" placeholder="Prénom"
+            <input
+              type="text"
+              name="Prénom"
+              placeholder="Prénom obligatoire"
+              required
           /></label>
         </p>
         <p>
-          <label><input type="text" name="Nom" placeholder="Nom" /></label>
+          <label
+            ><input
+              type="text"
+              name="Nom"
+              placeholder="Nom obligatoire "
+              required
+          /></label>
         </p>
         <p>
           <label>
@@ -38,7 +72,7 @@
         </p>
         <p>
           <label>
-            <input type="email" name="email" placeholder="Email"
+            <input type="email" name="email" placeholder="Email" required
           /></label>
         </p>
         <p>

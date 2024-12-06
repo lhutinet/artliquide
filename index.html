@@ -8,12 +8,26 @@
       type="image/png"
       href="./img/wp-1612609046614.jpg"
     />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DLX297GV89"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DLX297GV89");
+    </script>
     <title>
       art liquide photographie, Laurent Hutinet, photographe spécialisé dans les
       collisions de gouttes d'eau et de voyage
     </title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div id="navbar"></div>
@@ -21,22 +35,50 @@
     <h1>--ART LIQUIDE PHOTOGRAPHIE--</h1>
     <div class="container">
       <div class="containerPhoto">
-        <div id="imgGoutte" href="HTTp://"></div>
-        <a href="HTTp://">Gouttes d'eau</a>
+        <div id="imgGoutte">
+          <a
+            target="_parent"
+            rel="noopener noreferrer"
+            title="goutte"
+            class="imgIndex"
+            href="./photos.html?category=gouttes"
+          ></a>
+        </div>
+        <a class="titrePhoto" href="./photos.html?category=gouttes"
+          >Gouttes d'eau</a
+        >
       </div>
-      <div class="containerPhoto" href="HTTp://">
-        <div id="imgVoyage"></div>
-        <a href="http://">Voyages</a>
+
+      <div class="containerPhoto">
+        <div id="imgVoyage">
+          <a
+            target="_parent"
+            rel="noopener noreferrer"
+            title="instagram"
+            class="imgIndex"
+            href="./voyages.html"
+          ></a>
+        </div>
+        <a class="titrePhoto" href="./voyages.html">Voyages</a>
       </div>
-      <div class="containerPhoto" href="./mystere.html">
-        <div id="imgMystère"></div>
-        <a href="./mystere.html">Mystère</a>
+
+      <div class="containerPhoto">
+        <div id="imgMystère">
+          <a
+            target="_parent"
+            rel="noopener noreferrer"
+            title="instagram"
+            class="imgIndex"
+            href="./mystere.html"
+          ></a>
+        </div>
+        <a class="titrePhoto" href="./mystere.html">Mystère</a>
       </div>
     </div>
 
     <div class="bande">
       <p>
-        Contactez moi:
+        Contactez moi :
         <a href="mailto:info@artliquidephotographie.ovh"
           >info@artliquidephotographie.ovh</a
         >

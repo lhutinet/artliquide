@@ -5,6 +5,8 @@ $color1: linear-gradient(
   rgb(0, 117, 206) 100%
 );
 $shadow1: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+$shadow2: 21px 16px 45px 5px rgba(0, 0, 0, 0.2);
+
 $textshadow1: 21px 16px 5px rgba(28, 110, 164, 0.52);
 
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Handjet:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
@@ -27,6 +29,11 @@ h1 {
   text-align: center;
   margin: 50px auto;
   text-shadow: $textshadow1;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.1rem;
+    margin: 10px auto;
+  }
 }
 
 iframe {

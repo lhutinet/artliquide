@@ -21,6 +21,12 @@ h1 {
   margin: 50px auto;
   text-shadow: 21px 16px 5px rgba(28, 110, 164, 0.52);
 }
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.1rem;
+    margin: 10px auto;
+  }
+}
 
 iframe {
   width: 100%;
@@ -57,9 +63,6 @@ button :hover {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   min-width: 100%;
   margin: 0 auto;
   background: transparent;
@@ -69,7 +72,17 @@ nav {
   font-family: "Merriweather", serif;
 }
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
+  max-width: 100%;
   background: transparent;
   z-index: 100;
 }
@@ -79,7 +92,7 @@ nav ul li {
   text-align: center;
   position: relative;
 }
-nav ul ::after {
+nav ul::after {
   content: "";
   display: table;
   clear: both;
@@ -93,7 +106,7 @@ nav a {
   position: sticky;
   z-index: 100;
 }
-nav a :hover {
+nav a:hover {
   color: orange;
   border-bottom: 2px solid gold;
 }
@@ -119,7 +132,7 @@ nav .sous a {
   padding: 10px;
   border-bottom: none;
 }
-nav .sous a :hover {
+nav .sous a:hover {
   border-bottom: none;
   background-color: RGBa(200, 200, 200, 0.1);
 }
@@ -127,6 +140,11 @@ nav .deroulant > a::after {
   content: " ▼";
   font-size: 12px;
   z-index: 100;
+}
+@media screen and (max-width: 400px) {
+  nav {
+    font-size: 0.8rem;
+  }
 }
 
 #navSocial #social {
@@ -143,10 +161,64 @@ nav .deroulant > a::after {
 #navSocial #social a {
   color: black;
 }
-#navSocial #social a :hover {
+#navSocial #social a:hover {
   color: blueviolet;
 }
 
+/* Styles de base pour la navigation */
+/* Icône hamburger */
+.hamburger {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Media query pour petits écrans */
+@media (max-width: 600px) {
+  .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav ul {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5rem;
+    width: 50%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem;
+  }
+  nav ul.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav a {
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: left;
+  }
+}
 .mystere h2 {
   text-align: center;
   color: black;
@@ -207,6 +279,8 @@ nav .deroulant > a::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -223,18 +297,33 @@ nav .deroulant > a::after {
           flex-direction: column;
   /* filter: blur(1px); */
 }
-.container .containerPhoto hover {
-  /* filter: blur(0); */
-  z-index: 1;
+.container .containerPhoto .imgIndex {
+  display: block;
+  width: 320px;
+  height: 480px;
+  position: absolute;
+  text-decoration: none;
 }
-.container a {
+.container .titrePhoto {
   color: rgb(26, 26, 26);
   margin: 20px;
   text-align: center;
 }
-.container a :hover {
+.container .titrePhoto:hover {
   color: rgb(26, 26, 26);
   cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .containerPhoto {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 
 #imgGoutte {
@@ -249,7 +338,7 @@ nav .deroulant > a::after {
 #imgVoyage {
   min-width: 100%;
   height: 100%;
-  background: url(./img/wp-1612609046614.jpg) center/cover;
+  background: url(./img/lh3460.jpg) center/cover;
   -webkit-box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
           box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
 }
@@ -299,6 +388,84 @@ nav .deroulant > a::after {
   color: blueviolet;
 }
 
+#boutique {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: justify;
+  margin: 20px;
+}
+
+table {
+  border: 4px solid rgba(85, 85, 85, 0.1529411765);
+  background-color: rgba(85, 85, 85, 0.2039215686);
+  min-width: 400px;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 30px;
+}
+
+table td,
+table th {
+  border: 1px solid #555555;
+  padding: 5px 10px;
+}
+
+table tbody td {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+table td:nth-child(even) {
+  background: #398aa4;
+}
+
+table.steelBlueCols tfoot td {
+  font-size: 13px;
+}
+
+table.steelBlueCols tfoot .links {
+  text-align: right;
+}
+
+table.steelBlueCols tfoot .links a {
+  background: #ffffff;
+  color: #398aa4;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.containerSpreat {
+  display: block;
+  background: red;
+  max-width: 75%;
+  height: 200px;
+  background: url(./img/spreatshirt.jpg) center/cover;
+}
+.containerSpreat a {
+  display: block;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  text-decoration: none;
+}
+.containerSpreat a .imgIndex {
+  display: block;
+  width: 320px;
+  height: 480px;
+  position: absolute;
+  text-decoration: none;
+}
+
 #mainContact {
   font-size: 1.2rem;
   display: -webkit-box;
@@ -338,4 +505,196 @@ nav .deroulant > a::after {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   background: red;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  min-width: 250px;
+  gap: 10px;
+  padding: 20px;
+}
+.gallery-container img {
+  width: 90%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+.gallery-container img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.photo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.photo-container img {
+  max-width: 100%;
+  border-radius: 8px;
+  -webkit-box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+          box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+}
+.photo-container p {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+.photo-container h3 {
+  font-size: 1rem;
+  color: #333;
+  margin: 20px;
+}
+
+.filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.filter-container button,
+.filter-container select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.filter-container button:hover,
+.filter-container select:hover {
+  background-color: #f0f0f0;
+}
+.filter-container button select,
+.filter-container select select {
+  font-size: 1rem;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none; /* Masqué par défaut */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000;
+}
+.lightbox -img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+.close:hover {
+  color: #f00;
+}
+
+/* Conteneur du zoom */
+.zoom-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+  display: none; /* Masqué par défaut */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+  overflow: hidden; /* Empêche les débordements */
+}
+
+/* Image agrandie */
+.zoom-img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain; /* Adapte l'image sans la déformer */
+  border-radius: 8px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease; /* Transition fluide pour l'agrandissement */
+}
+
+/* Fermeture en cliquant sur le fond */
+.zoom-container:after {
+  content: "✕"; /* Symbole de fermeture */
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.zoom-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10%;
+  z-index: 1001;
+  width: 50px;
+}
+
+.zoom-arrow:hover {
+  background: rgb(255, 255, 255);
+}
+
+#prev-photo {
+  left: 10px;
+}
+
+#next-photo {
+  right: 10px;
 }/*# sourceMappingURL=style.css.map */

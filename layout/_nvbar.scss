@@ -1,5 +1,5 @@
 nav {
-  display: flex;
+  // display: flex;
   min-width: 100%;
   margin: 0 auto;
   background: transparent;
@@ -9,7 +9,11 @@ nav {
   font-family: "Merriweather", serif;
 
   ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
+    max-width: 100%;
     background: transparent;
     z-index: 100;
 
@@ -20,7 +24,7 @@ nav {
       position: relative;
     }
 
-    ::after {
+    &::after {
       content: "";
       display: table;
       clear: both;
@@ -36,15 +40,15 @@ nav {
     position: sticky;
     z-index: 100;
 
-    :hover {
+    &:hover {
       color: orange;
       border-bottom: 2px solid gold;
     }
   }
+
   > ul li:hover .sous {
     display: block;
   }
-
   .sous {
     display: none;
     box-shadow: 0px 1px 2px #ccc;
@@ -68,7 +72,7 @@ nav {
       padding: 10px;
       border-bottom: none;
 
-      :hover {
+      &:hover {
         border-bottom: none;
         background-color: RGBa(200, 200, 200, 0.1);
       }
@@ -79,6 +83,10 @@ nav {
     content: " ▼";
     font-size: 12px;
     z-index: 100;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 0.8rem;
   }
 }
 
@@ -92,9 +100,84 @@ nav {
     z-index: 1;
     a {
       color: black;
-      :hover {
+      &:hover {
         color: blueviolet;
       }
     }
+  }
+}
+
+/* Styles de base pour la navigation */
+// nav {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 1rem;
+//   background-color: #333;
+//   color: white;
+// }
+
+// nav ul {
+//   list-style: none;
+//   display: flex;
+//   gap: 1rem;
+// }
+
+// nav ul li {
+//   display: inline;
+// }
+
+// nav a {
+//   text-decoration: none;
+//   color: white;
+//   font-weight: bold;
+// }
+
+/* Icône hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+}
+
+/* Media query pour petits écrans */
+@media (max-width: 600px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 50%;
+    // background-color: rgba(59, 59, 59, 0.5);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: left;
   }
 }

@@ -1,30 +1,43 @@
 .container {
   display: flex;
+
+  flex-wrap: wrap;
   justify-content: space-around;
 
   .containerPhoto {
     display: flex;
-
     z-index: 1;
     width: 320px;
     height: 480px;
     flex-direction: column;
     /* filter: blur(1px); */
 
-    hover {
-      /* filter: blur(0); */
+    .imgIndex {
+      display: block;
+      width: 320px;
+      height: 480px;
+      position: absolute;
 
-      z-index: 1;
+      text-decoration: none;
     }
   }
-  a {
+  .titrePhoto {
+    // background-color: red;
     color: rgb(26, 26, 26);
     margin: 20px;
     text-align: center;
 
-    :hover {
+    &:hover {
       color: rgb(26, 26, 26);
       cursor: pointer;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+
+    .containerPhoto {
+      transform: scale(0.7);
     }
   }
 }
@@ -40,7 +53,7 @@
 #imgVoyage {
   min-width: 100%;
   height: 100%;
-  background: url(./img/wp-1612609046614.jpg) center/cover;
+  background: url(./img/lh3460.jpg) center/cover;
   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
 }
 
@@ -50,6 +63,62 @@
   background: url(./img/lh2510-avec-accentuation-bruit.jpg) center/cover;
   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
 }
+
+// #imgCambodge {
+//   min-width: 100%;
+//   height: 100%;
+//   background: url(./img/cambodge/_cambodge.jpg) center/cover;
+//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+// }
+// #imgCuba {
+//   min-width: 100%;
+//   height: 100%;
+//   background: url(./img/cuba/_Cuba.jpg) center/cover;
+//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+// }
+// #imgMaroc {
+//   min-width: 100%;
+//   height: 100%;
+//   background: url(./img/Maroc/_maroc.jpg) center/cover;
+//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+// }
+// #imgKenya {
+//   min-width: 100%;
+//   height: 100%;
+//   background: url(./img/kenya/_kenya.jpg) center/cover;
+//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+// }
+// #imgIslande {
+//   min-width: 100%;
+//   height: 100%;
+//   background: url(./img/islande/_islande.jpg) center/cover;
+//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+// }
+// #imgReunion {
+//   min-width: 100%;
+//   height: 100%;
+//   background: url(./img/laReunion/_reunion.jpg) center/cover;
+//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+// }
+// #imgLofoten {
+//   min-width: 100%;
+//   height: 100%;
+//   background: url(./img/lofoten/_lofoten.jpg) center/cover;
+//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+// }
+// #imgBretagne {
+//   min-width: 100%;
+//   height: 100%;
+//   background: url(./img/bretagne/_bretagne.jpg) center/cover;
+//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+// }
+// #imgBretagne2 {
+//   min-width: 100%;
+//   height: 100%;
+//   background: url(./img/bretagne2/_bretagne2.webp) center/cover;
+//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+// }
+
 .bande {
   display: flex;
   min-width: 100%;
@@ -78,6 +147,89 @@
       :hover {
         color: blueviolet;
       }
+    }
+  }
+}
+#boutique {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin: 20px;
+
+  // table {
+  //   border: 2px solid black;
+  //   background-color: rgba(108, 108, 245, 0.03);
+  //   margin: 20px;
+  //   box-shadow: $shadow2;
+
+  //   td {
+  //     border: 0.1px solid black;
+  //     margin: 0.1px;
+  //     box-shadow: $shadow2;
+  //     padding: 10px 5px;
+
+  //     background-color: rgba(152, 152, 242, 0.05);
+  //   }
+  // }
+}
+table {
+  border: 4px solid #55555527;
+  background-color: #55555534;
+  min-width: 400px;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 30px;
+}
+table td,
+table th {
+  border: 1px solid #555555;
+  padding: 5px 10px;
+}
+table tbody td {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+}
+table td:nth-child(even) {
+  background: #398aa4;
+}
+
+table.steelBlueCols tfoot td {
+  font-size: 13px;
+}
+table.steelBlueCols tfoot .links {
+  text-align: right;
+}
+table.steelBlueCols tfoot .links a {
+  // display: inline-block;
+  background: #ffffff;
+  color: #398aa4;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.containerSpreat {
+  display: block;
+  background: red;
+  max-width: 75%;
+  height: 200px;
+  background: url(./img/spreatshirt.jpg) center/cover;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    text-decoration: none;
+
+    .imgIndex {
+      display: block;
+      width: 320px;
+      height: 480px;
+      position: absolute;
+      text-decoration: none;
     }
   }
 }
