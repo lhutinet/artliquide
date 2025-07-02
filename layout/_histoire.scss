@@ -1,0 +1,246 @@
+.containerHistoire {
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+
+    p {
+        margin: 20px;
+        font-size: 1.1rem;
+        text-align: center;
+        background: $color2;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: $shadow1;
+        max-width: 80%;
+        border-radius: 20px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: $shadow1;
+
+    }
+
+    .containerPhotoGou1 {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+
+        .contGou1 {
+            width: 100%;
+            display: flex;
+
+            justify-content: center;
+
+
+
+            #img1,
+            #img2 {
+                height: 320px;
+                // width: auto;
+                margin: 10px;
+                object-fit: cover;
+            }
+
+            #img3,
+            #img4 {
+                height: 250px;
+                // width: auto;
+                margin: 10px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    #img2-2 {
+        display: flex;
+        width: 100%;
+        height: 320px;
+
+    }
+
+    #containerPhotoGou2 {
+
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+
+        #gou2cont {
+            display: flex;
+            flex-direction: row
+        }
+
+        #img2-3,
+        #img2-4,
+        #img2-5 {
+            display: flex;
+            width: 100%;
+            height: 320px;
+            margin: 10px;
+        }
+
+        #img2-5 {
+            height: 640px;
+
+        }
+
+    }
+
+    .containerPhotoGo3 {
+        display: flex;
+
+        #img3-1,
+        #img3-2 {
+            display: flex;
+            width: 100%;
+            height: 320px;
+            margin: 10px;
+        }
+    }
+
+    .containerPhotoGo4 {
+        display: flex;
+
+        #img4-1 {
+            display: flex;
+            width: 100%;
+            height: 320px;
+        }
+    }
+
+    .containerPhotoGou5 {
+        display: flex;
+
+        flex-direction: column;
+
+        .imgGouv5cont1 {
+            display: flex;
+        }
+
+        .imgGouv5cont2 {
+            display: flex;
+        }
+
+        #img5-1,
+        #img5-2,
+        #img5-3,
+        #img5-4,
+        #img5-5 {
+            display: flex;
+            width: 100%;
+            height: 320px;
+            margin: 10px;
+        }
+    }
+
+    .containerPhotoGou6 {
+        display: flex;
+
+        flex-direction: column;
+
+        .imgGouv6cont1 {
+            display: flex;
+        }
+
+        .imgGouv6cont2 {
+            display: flex;
+        }
+
+        #img6-1,
+        #img6-2,
+        #img6-3,
+        #img6-4,
+        #img6-5,
+        #img6-6 {
+            display: flex;
+            width: 100%;
+            height: 320px;
+            margin: 10px;
+        }
+    }
+
+    #img7-1,
+    #img8-1 {
+        display: flex;
+        width: 100%;
+        height: 420px;
+        margin: 10px;
+    }
+
+
+    @media screen and (max-width: 600px) {
+
+        .containerPhotoGou6,
+        .containerPhotoGou5,
+        .containerPhotoGo4,
+        .containerPhotoGo3,
+        .containerPhotoGou2,
+        .containerPhotoGou1,
+        .contGou1,
+        .gou2-2cont,
+        #img2-2,
+        .containerHistoire,
+        .containerPhotoGou1,
+        .imgGouv5cont1,
+        .imgGouv5cont2,
+        .imgGouv6cont1,
+        .imgGouv6cont2,
+        #gou2cont,
+        #gou2-2cont,
+        .imgGouv5cont1 {
+            display: flex;
+            flex-wrap: wrap;
+            grid-template-columns: 1fr;
+            max-width: 98%;
+            justify-content: center;
+            height: auto;
+
+            .contGou1 #img1,
+            .contGou1 #img2,
+            .contGou1 #img3,
+            .contGou1 #img4,
+            #img2-3,
+            #img2-4,
+            #img2-5,
+            #img5-1,
+            #img3-1,
+            #img3-2,
+            #img5-2,
+            #img5-3,
+            #img5-4,
+            #img5-5,
+            #img6-1,
+            #img6-2,
+            #img6-3,
+            #img6-4,
+            #img6-5,
+            #img6-6 {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+
+        img {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #img2-5,
+        #img5-1 {
+            display: block;
+            width: 100%;
+            height: auto;
+
+        }
+    }
+
+    // fin screen 600px --------------------------------------------
+}

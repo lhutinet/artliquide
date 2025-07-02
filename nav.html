@@ -27,81 +27,121 @@
     <title>navbar</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div id="containNav">
     <nav>
       <ul>
         <li>
-          <a href="./index.html" target="_parent">Art liquide photographie</a>
+          <a href="./index.html" target="_parent">
+            <img class="imgLogo" src="./img//logo.png" , alt="logo"
+          /></a>
         </li>
+
         <li class="deroulant">
-          <a href="#" data-category="gouttes" target="_parent">Gouttes d'eau</a>
+          <!-- <a>Gouttes d'eau</a> -->
+          <a href="./Gouttes.html" target="_parent">Gouttes d'eau</a>
+
           <ul class="sous">
-            <li><a href="#" data-category="photos">Projet expo</a></li>
+            <li></li>
+            <li><a href="#" data-category="chute">Chute Silencieuse</a></li>
+            <li><a href="#" data-category="echo">Écho Céleste</a></li>
+            <li><a href="#" data-category="harmonie">Harmonie Fugace</a></li>
             <li>
-              <a href="#" data-category="personnage">Personnages et montages</a>
+              <a href="#" data-category="lumiere">Lumière Intérieure</a>
             </li>
-            <!-- <li><a href="http://">Mon histoire de gouttes</a></li> -->
-            <!-- <li><a href="#" data-category="photos">Projet expo</a></li> -->
-            <!-- <li><a href="http://">mes video</a></li> -->
-            <!-- <li><a href="http://">animation 3d</a></li> -->
-            <!-- <li><a href="http://">et pour en voir encore</a></li> -->
+            <li><a href="#" data-category="ombre">Ombre Lumineuse</a></li>
+            <li><a href="#" data-category="onde">Onde Pure</a></li>
+            <li><a href="#" data-category="reve">Rêve Éthéré</a></li>
+            <li><a href="#" data-category="serenite">Sérénité Liquide</a></li>
+            <li><a href="#" data-category="souffle">Souffle Divin</a></li>
+            <li><a href="#" data-category="voile">Voile Sacré</a></li>
+            <li>
+              <a href="#" data-category="gouttes" target="_parent"
+                >Toutes les gouttes d'eau</a
+              >
+            </li>
+            <!-- <li> -->
+            <li><a href="./histoire.html">Mon histoire de gouttes</a></li>
+            <!-- </li> -->
           </ul>
         </li>
         <li class="deroulant">
+          <!-- <a>Mes voyages</a> -->
           <a href="./voyages.html">Mes voyages</a>
           <ul class="sous">
+            <li><a href="#" data-category="bretagne">Bretagne</a></li>
             <li><a href="#" data-category="cambodge">Cambodge</a></li>
-            <li><a href="#" data-category="cuba">cuba</a></li>
-            <li><a href="#" data-category="maroc">maroc</a></li>
-            <li><a href="#" data-category="kenya">kenya</a></li>
-            <li><a href="#" data-category="islande">islande</a></li>
-            <li><a href="#" data-category="laReunion">la reunion</a></li>
             <li><a href="#" data-category="lofoten">Iles lofoten</a></li>
-            <li><a href="#" data-category="bretagne">bretagne</a></li>
-            <li><a href="#" data-category="bretagne2">bretagne</a></li>
+            <li><a href="#" data-category="laReunion">La Réunion</a></li>
+            <li><a href="#" data-category="islande">Islande</a></li>
+            <li><a href="#" data-category="kenya">Kenya</a></li>
+            <li><a href="#" data-category="cuba">Cuba</a></li>
+            <li><a href="#" data-category="maroc">Maroc</a></li>
+            <li><a href="#" data-category="thaillande">Thaillande</a></li>
+            <li><a href="#" data-category="capVert">Cap Vert</a></li>
           </ul>
         </li>
-        <li><a href="./mystere.html" target="_parent">Mystere</a></li>
-        <li><a href="./contact.html" target="_parent">Contact</a></li>
+        <li><a href="./mystere.html" target="_parent">Jeu mystère</a></li>
+        <!-- <li><a href="./contact.html" target="_parent">Contact</a></li> -->
+
+        <li class="deroulant">
+          <a href=".//livreOr.html" target="_parent">Livre d'or</a>
+
+          <ul class="sous">
+            <li>
+              <a href=".//exposition.html" target="_parent">Expositions</a>
+            </li>
+            <li>
+              <a href=".//encore.html" target="_parent">Pour aller plus loin</a>
+            </li>
+          </ul>
+        </li>
+
         <li><a href="./boutique.html" target="_parent">Boutique</a></li>
       </ul>
+
+      <div id="navSocial">
+        <ul id="social">
+          <li>
+            <a
+              href="https://www.facebook.com/artliquidephoto/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/art_liquide/ "
+              target="_blank"
+              rel="noopener noreferrer"
+              title="instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.tiktok.com/@laurenthutinet "
+              target="_blank"
+              rel="noopener noreferrer"
+              title="tik tok"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </li>
+          <li>
+            <button id="toggleBubbleMaker" onclick="toggleBubbleMaker()">
+              Stop animation
+            </button>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div id="navSocial">
-      <ul id="social">
-        <li>
-          <a
-            href="https://www.facebook.com/artliquidephoto/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="facebook"
-            ><i class="fab fa-facebook"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/art_liquide/ "
-            target="_blank"
-            rel="noopener noreferrer"
-            title="instagram"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.tiktok.com/@laurenthutinet "
-            target="_blank"
-            rel="noopener noreferrer"
-            title="tik tok"
-            ><i class="fa-brands fa-tiktok"></i
-          ></a>
-        </li>
-      </ul>
-    </div>
-  </body>
+  </div>
+
+  <!-- <button onclick="toggleBubbleMaker()">Démarrer/Arrêter les Bulles</button> -->
 </html>

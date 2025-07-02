@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./img/wp-1612609046614.jpg"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      defer
+      src="https://www.googletagmanager.com/gtag/js?id=G-DLX297GV89"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DLX297GV89");
+      gtag("config", "G-XVYJ2BY106");
+    </script>
+    <!-- google index --------------------------------------------------->
+    <title>Flipbook en ligne</title>
+    <title>
+      Flipbook en ligne art liquide photographie, Laurent Hutinet, photographe
+      spécialisé dans les collisions de gouttes d'eau et de voyage
+    </title>
+    <meta
+      name="description"
+      content="La page Livre d'Or du site Art Liquide
+    Photographie permet aux visiteurs de laisser des messages et commentaires.
+    Elle présente un flipbook interactif où les messages précédents sont
+    affichés, offrant une expérience conviviale et engageante. Les utilisateurs
+    peuvent également envoyer leurs propres messages via un formulaire intégré,
+    contribuant ainsi à la communauté et au partage autour des œuvres de Laurent
+    Hutinet. "
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <script src="./script/navb.js"></script>
+    <!-- <script src="scripts/menu.js" defer></script> -->
+
+    <h1>-- Livre d'Or --</h1>
+    <div class="containtLivre">
+      <button id="prev" class="nav-button">‹</button>
+      <div id="flipbook">
+        <div class="page left">
+          <div class="page-corner"></div>
+          <img src="./img/livreOr/livreOr01.jpg" alt="Page 1" />
+        </div>
+        <div class="page right">
+          <div class="page-corner"></div>
+          <img src="./img/livreOr/livreOr02.jpg" alt="Page 2" />
+        </div>
+
+        <div class="page left">
+          <div class="page-corner"></div>
+          <div class="vierge">
+            <p>Tournezla page</p>
+          </div>
+        </div>
+        <div class="page right">
+          <div class="page-corner"></div>
+          <img src="./img/livreOr/livreOr04.jpg" alt="Page 4" />
+        </div>
+        <div class="page left">
+          <div class="page-corner"></div>
+          <img src="./img/livreOr/livreOr05.jpg" alt="Page 5" />
+        </div>
+        <div class="page right">
+          <div class="page-corner"></div>
+          <img src="./img/livreOr/livreOr06.jpg" alt="Page 6" />
+        </div>
+        <div class="page left">
+          <div class="page-corner"></div>
+          <img src="./img/livreOr/livreOr07.jpg" alt="Page 7" />
+        </div>
+        <div class="page right">
+          <div class="page-corner"></div>
+          <img src="./img/livreOr/livreOr08.jpg" alt="Page 8" />
+        </div>
+        <div class="page left">
+          <div class="page-corner"></div>
+          <div class="vierge">
+            <p>Tournezla page</p>
+          </div>
+        </div>
+        <div class="page right">
+          <div class="page-corner"></div>
+          <img src="./img/livreOr/livreOr10.jpg" alt="Page 10" />
+        </div>
+        <div class="page left">
+          <div class="page-corner"></div>
+          <img src="./img/livreOr/livreOr11.jpg" alt="Page 11" />
+        </div>
+        <div class="page right">
+          <div class="page-corner"></div>
+          <img src="./img/livreOr/livreOr12.jpg" alt="Page 12" />
+        </div>
+
+        <div class="page left">
+          <div class="page-corner"></div>
+          <img src="./img/livreOr/livreOr13.jpg" alt="Page 11" />
+        </div>
+
+        <div class="page right">
+          <div class="vierge">
+            <p>
+              N'hésitez pas à me laisser un message. Je le mettrai ici avec
+              plaisir.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button id="next" class="nav-button">›</button>
+    </div>
+    <h2>Envoyez-moi un message</h2>
+    <form
+      name="contact"
+      method="POST"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+    >
+      <div class="containtForm">
+        <label>
+          <input type="text" name="Prénom" placeholder="Prénom *" required
+        /></label>
+
+        <label><input type="text" name="Nom" placeholder="Nom  " /></label>
+        <label>
+          <input type="email" name="email" placeholder="Email *" required
+        /></label>
+
+        <button type="submit">Envoyer</button>
+      </div>
+      <label>
+        <textarea
+          name="textarea"
+          id="textareaCont"
+          placeholder="Votre texte"
+        ></textarea>
+      </label>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./script/turn.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        function resizeFlipbook() {
+          if (window.innerWidth <= 500) {
+            $("#flipbook").turn("display", "single");
+          } else {
+            $("#flipbook").turn("display", "double");
+          }
+        }
+
+        if (typeof $.fn.turn !== "undefined") {
+          $("#flipbook").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true,
+            display: window.innerWidth <= 500 ? "single" : "double",
+            duration: 1000,
+          });
+
+          resizeFlipbook();
+          window.addEventListener("resize", resizeFlipbook);
+
+          // Navigation boutons
+          $("#prev").click(function () {
+            $("#flipbook").turn("previous");
+          });
+          $("#next").click(function () {
+            $("#flipbook").turn("next");
+          });
+
+          // Activer la navigation par glisser-déposer
+          $("#flipbook").on("mousedown", function (event) {
+            let startX = event.pageX;
+
+            $(document).on("mousemove.flipbook", function (moveEvent) {
+              let diff = moveEvent.pageX - startX;
+              if (diff > 50) {
+                $("#flipbook").turn("previous");
+                $(document).off("mousemove.flipbook");
+              } else if (diff < -50) {
+                $("#flipbook").turn("next");
+                $(document).off("mousemove.flipbook");
+              }
+            });
+
+            $(document).on("mouseup", function () {
+              $(document).off("mousemove.flipbook mouseup");
+            });
+          });
+        } else {
+          console.error("Turn.js n'a pas pu être chargé.");
+        }
+      });
+    </script>
+
+    <script src="./script/bublle.js"></script>
+
+    <div id="footer"></div>
+  </body>
+</html>

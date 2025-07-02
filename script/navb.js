@@ -12,6 +12,7 @@ async function loadNavbar() {
 
     // Réattache les gestionnaires d'événements après l'injection
     setupNavigationEvents();
+    setupHamburgerMenu(); // Ajout de la fonction pour le hamburger menu
   } catch (error) {
     console.error("Erreur lors du chargement de la navigation :", error);
   }
@@ -31,10 +32,36 @@ function setupNavigationEvents() {
   });
 }
 
-function toggleMenu() {
-  const menu = document.querySelector("nav ul");
-  menu.classList.toggle("active");
+// Fonction pour gérer l'événement du hamburger menu
+function setupHamburgerMenu() {
+  const hamburger = document.querySelector(".hamburger");
+  if (hamburger) {
+    hamburger.addEventListener("click", function () {
+      const menu = document.querySelector("nav ul");
+      if (menu) {
+        menu.classList.toggle("active");
+      }
+    });
+  }
 }
-// toggleMenu();
+
 // Charger la navigation avant la galerie
+
+async function loadFooter() {
+  try {
+    const response = await fetch("./footer.html"); // Assurez-vous que le chemin est correct
+    if (!response.ok) {
+      throw new Error(
+        `Erreur de chargement de la navigation : ${response.status}`
+      );
+    }
+    const footerContent = await response.text();
+    document.getElementById("footer").innerHTML = footerContent;
+
+    // Réattache les gestionnaires d'événements après l'injection
+  } catch (error) {
+    console.error("Erreur lors du chargement de la navigation :", error);
+  }
+}
 loadNavbar();
+loadFooter();

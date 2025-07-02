@@ -21,65 +21,55 @@
       gtag("js", new Date());
 
       gtag("config", "G-DLX297GV89");
+        gtag("config", "G-XVYJ2BY106");
     </script>
-    <title>contact</title>
+    <title>
+      contact art liquide photographie, Laurent Hutinet, photographe spécialisé
+      dans les collisions de gouttes d'eau et de voyage
+    </title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="navbar"></div>
     <script src="./script/navb.js"></script>
+    <!-- <script src="scripts/menu.js" defer></script> -->
 
     <main id="mainContact">
+
+    </div>
+
       <form
         name="contact"
         method="POST"
         netlify-honeypot="bot-field"
         data-netlify="true"
       >
-        <!-- <p class="hidden">
-          <label>
-            Don’t fill this out if you’re human: <input name="bot-field" />
-          </label>
-        </p> -->
         <h2>Envoyez-moi un message</h2>
-        <p>
-          <label>
-            <input
-              type="text"
-              name="Prénom"
-              placeholder="Prénom obligatoire"
-              required
-          /></label>
-        </p>
-        <p>
-          <label
-            ><input
-              type="text"
-              name="Nom"
-              placeholder="Nom obligatoire "
-              required
-          /></label>
-        </p>
-        <p>
-          <label>
-            <textarea
-              name="textarea"
-              id="textareaCont"
-              placeholder="Votre texte"
-            ></textarea>
-          </label>
-        </p>
-        <p>
-          <label>
-            <input type="email" name="email" placeholder="Email" required
-          /></label>
-        </p>
-        <p>
-          <button type="submit">Envois</button>
-        </p>
+
+        <label>
+          <input type="text" name="Prénom" placeholder="Prénom *" required
+        /></label>
+
+        <label><input type="text" name="Nom" placeholder="Nom  " /></label>
+
+        <label>
+          <textarea
+            name="textarea"
+            id="textareaCont"
+            placeholder="Votre texte"
+          ></textarea>
+        </label>
+
+        <label>
+          <input type="email" name="email" placeholder="Email *" required
+        /></label>
+
+        <button type="submit">Envoyer</button>
       </form>
     </main>
-    <script src="./index.js"></script>
   </body>
+  <script src="./script/bublle.js"></script>
+  <!-- <script src="./script/pluie.js"></script> -->
+  <!-- <div id="footer"></div> -->
 </html>

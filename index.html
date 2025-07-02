@@ -1,129 +1,191 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="./img/wp-1612609046614.jpg"
-    />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-DLX297GV89"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			type="image/png"
+			href="./img/wp-1612609046614.jpg"
+		/>
+		<!-- Google tag (gtag.js) -->
+		<script
+			defer
+			src="https://www.googletagmanager.com/gtag/js?id=G-DLX297GV89"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-      gtag("config", "G-DLX297GV89");
-    </script>
-    <title>
-      art liquide photographie, Laurent Hutinet, photographe spécialisé dans les
-      collisions de gouttes d'eau et de voyage
-    </title>
+			gtag("config", "G-DLX297GV89");
+			gtag("config", "G-XVYJ2BY106");
+		</script>
+		<title>
+			art liquide photographie, Laurent Hutinet, photographe spécialisé dans les
+			collisions de gouttes d'eau et de voyage
+		</title>
+		<meta
+			name="description"
+			content="Art Liquide Photographie est le site de Laurent Hutinet, photographe autodidacte passionné par la capture des collisions de gouttes d'eau. Depuis l'âge de 14 ans, il explore le monde à traver
+      s son objectif, cherchant à révéler la beauté cachée dans l'ordinaire. Ses œuvres uniques et poétiques ont été exposées lors de divers salons et expositions, témoignant de son expertise et de sa passion pour l'art photographique.  "
+		/>
 
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div id="navbar"></div>
-    <script src="./script/navb.js"></script>
-    <h1>--ART LIQUIDE PHOTOGRAPHIE--</h1>
-    <div class="container">
-      <div class="containerPhoto">
-        <div id="imgGoutte">
-          <a
-            target="_parent"
-            rel="noopener noreferrer"
-            title="goutte"
-            class="imgIndex"
-            href="./photos.html?category=gouttes"
-          ></a>
-        </div>
-        <a class="titrePhoto" href="./photos.html?category=gouttes"
-          >Gouttes d'eau</a
-        >
-      </div>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div id="navbar"></div>
+		<script src="./script/navb.js"></script>
+		<script>
+			VanillaTilt.init(document.querySelectorAll(".imgLogo "), {
+				max: 25,
+				speed: 400,
+				glare: true,
+				"max-glare": 1,
+				gyroscope: true,
+				gyroscopeMinAngleX: -45,
+				gyroscopeMaxAngleX: 45,
+				gyroscopeMinAngleY: -45,
+				gyroscopeMaxAngleY: 45,
+			});
+		</script>
 
-      <div class="containerPhoto">
-        <div id="imgVoyage">
-          <a
-            target="_parent"
-            rel="noopener noreferrer"
-            title="instagram"
-            class="imgIndex"
-            href="./voyages.html"
-          ></a>
-        </div>
-        <a class="titrePhoto" href="./voyages.html">Voyages</a>
-      </div>
+		<!-- <script src="scripts/menu.js" defer></script> -->
 
-      <div class="containerPhoto">
-        <div id="imgMystère">
-          <a
-            target="_parent"
-            rel="noopener noreferrer"
-            title="instagram"
-            class="imgIndex"
-            href="./mystere.html"
-          ></a>
-        </div>
-        <a class="titrePhoto" href="./mystere.html">Mystère</a>
-      </div>
-    </div>
+		<main>
+			<h1 class="title">
+				<span class="hidden-art"></span>
+				<span class="photographie" id="liquide">LIQUIDEPHOTOGRAPHIE</span>
 
-    <div class="bande">
-      <p>
-        Contactez moi :
-        <a href="mailto:info@artliquidephotographie.ovh"
-          >info@artliquidephotographie.ovh</a
-        >
-      </p>
-      <ul>
-        <li>
-          <a
-            href="https://m.facebook.com/laurent.hutinet"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="page Facebook "
-            ><i class="fab fa-facebook"> </i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/lhutinet/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="page instagram"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://500px.com/laurent_hutinet"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="page 500px"
-            ><i class="fa-brands fa-500px"> </i
-          ></a>
-        </li>
+				<span class="highlight" id="T">T</span>
+				<span class="highlight" id="R">R</span>
+				<span class="highlight" id="A">A</span>
+			</h1>
 
-        <li>
-          <a
-            href="https://www.flickr.com/photos/53911614@N03/"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="page flickr"
-            ><i class="fa-brands fa-flickr"></i
-          ></a>
-        </li>
-      </ul>
-    </div>
+			<div class="container">
+				<div class="containerPhoto">
+					<div class="imgTitre" id="imgGoutte">
+						<a
+							rel="noopener noreferrer"
+							title="gouttes"
+							class="imgIndex"
+							href="./Gouttes.html"
+							target="_parent"
+						></a>
+					</div>
+					<a class="titrePhoto" href="./Gouttes.html" target="_parent"
+						>Gouttes d'eau</a
+					>
+				</div>
 
-    <script src="./index.js"></script>
-  </body>
+				<div class="containerPhoto">
+					<div class="imgTitre" id="imgVoyage">
+						<a
+							target="_parent"
+							rel="noopener noreferrer"
+							title="Voyage"
+							class="imgIndex"
+							href="./voyages.html"
+						></a>
+					</div>
+					<a class="titrePhoto" href="./voyages.html">Voyages</a>
+				</div>
+				<div class="containerPhoto">
+					<div class="imgTitre" id="imgAnimaux">
+						<a
+							target="_parent"
+							rel="noopener noreferrer"
+							title="animaux"
+							class="imgIndex"
+							href="./photos.html?category=animaux"
+						></a>
+					</div>
+					<a class="titrePhoto" href="./photos.html?category=animaux"
+						>Animaux</a
+					>
+				</div>
+
+				<div class="containerPhoto">
+					<div class="imgTitre" id="imgMystère">
+						<a
+							target="_parent"
+							rel="noopener noreferrer"
+							title="Mystère"
+							class="imgIndex"
+							href="./mystere.html"
+						></a>
+					</div>
+					<a class="titrePhoto" href="./mystere.html">Mystère</a>
+				</div>
+			</div>
+			<!-- <div class="presentation" id="informations">
+        "Je vous invite à me retrouver au
+        <a href="https://salonmontsdorphotos.wixsite.com/2025"
+          >salon de mont d'or </a
+        >, qui se tiendra du 14 au 16 mars 2025. <br />Ce sera pour moi un grand
+        plaisir de vous y accueillir et d’échanger avec vous sur mon travail et
+        ma passion. <br />
+        Venez découvrir mes œuvres et partager un moment convivial autour de
+        l’art. J’ai hâte de vous y retrouver !"
+      </div> -->
+			<div class="bio">
+				<img
+					src="./img/lh0109-Modifier.jpg"
+					alt="portrait de moi laurent Hutinet"
+				/>
+				<p>
+					Bonjour et bienvenue sur mon site !
+					<br />
+					<br />
+					Je m'appelle Laurent, et ma passion pour la photographie a commencé
+					très tôt. Quand j'avais quatorze ans, mon oncle m'a offert mon premier
+					appareil photo, depuis je n'ai jamais cessé d'explorer le monde à
+					travers l'objectif. Autodidacte, j'ai évolué en tant que photographe
+					amateur, me perfectionnant au fil des années.
+					<br />
+					<br />
+					Ce qui me fascine le plus, c'est la photographie de gouttes d'eau, en
+					particulier les collisions de gouttes. Ces instants éphémères et
+					magiques me permettent de capturer des images uniques et poétiques.
+					Chaque photographie est pour moi une aventure artistique, une quête
+					pour saisir la beauté cachée dans l'ordinaire.
+					<br />
+					<br />
+					J'ai eu la chance de présenter mon travail lors de plusieurs
+					<a href="./exposition.html">expositions et salons de photographie</a>.
+					Ces événements sont pour moi des moments précieux de partage et
+					d'échange avec d'autres passionnés et amateurs d'art.
+					<br />
+					<br />
+					Je vous souhaite une bonne visite de mon site et de vous plonger dans
+					mon univers. J'espère que vous apprécierez mes créations autant que
+					j'ai aimé les réaliser.
+					<br />
+					<br />
+					<em>Laurent Hutinet</em>
+				</p>
+			</div>
+		</main>
+
+		<div id="footer"></div>
+	</body>
+	<script type="text/javascript" src="./script/vanilla-tilt.js"></script>
+
+	<script>
+		VanillaTilt.init(document.querySelectorAll(".imgTitre "), {
+			max: 25,
+			speed: 400,
+			glare: true,
+			"max-glare": 1,
+			gyroscope: true,
+			gyroscopeMinAngleX: -45,
+			gyroscopeMaxAngleX: 45,
+			gyroscopeMinAngleY: -45,
+			gyroscopeMaxAngleY: 45,
+		});
+	</script>
+
+	<script src="./script/bublle.js"></script>
 </html>

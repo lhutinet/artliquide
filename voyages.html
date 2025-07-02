@@ -10,7 +10,7 @@
     />
     <!-- Google tag (gtag.js) -->
     <script
-      async
+      defer
       src="https://www.googletagmanager.com/gtag/js?id=G-DLX297GV89"
     ></script>
 
@@ -22,21 +22,50 @@
       gtag("js", new Date());
 
       gtag("config", "G-DLX297GV89");
+      gtag("config", "G-XVYJ2BY106");
     </script>
     <!-- google index --------------------------------------------------->
     <title>
-      art liquide photographie, Laurent Hutinet, photographe spécialisé dans les
-      collisions de gouttes d'eau et de voyage
+      voyages art liquide photographie, Laurent Hutinet, photographe spécialisé
+      dans les collisions de gouttes d'eau et de voyage
     </title>
+
+    <meta name=" La section Voyages du site Art Liquide Photographie présente
+    une collection de photographies prises lors des voyages de Laurent Hutinet.
+    Elle comprend des images de la Bretagne, du Cambodge, des îles Lofoten, de
+    La Réunion et de l'Islande. Ces photographies offrent un aperçu des paysages
+    et des cultures rencontrés par le photographe lors de ses explorations à
+    travers le monde./>
+
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
     <div id="navbar"></div>
     <script src="./script/navb.js"></script>
-    <h1>--Mes Voyages--</h1>
-    <div class="container" id="photoContainer"></div>
 
-    <script src="index.js"></script>
-    <script src="./script/voyages.js"></script>
+    <!-- <script src="scripts/menu.js" defer></script> -->
+    <main>
+      <h1>-- Mes Voyages --</h1>
+      <div class="container" id="photoContainer"></div>
+      <script src="./script/voyages.js"></script>
+      <script type="text/javascript" src="./script/vanilla-tilt.js"></script>
+      <script>
+        VanillaTilt.init(document.querySelectorAll(".imgText "), {
+          max: 25,
+          speed: 400,
+          glare: true,
+          "max-glare": 1,
+          gyroscope: true,
+          gyroscopeMinAngleX: -45,
+          gyroscopeMaxAngleX: 45,
+          gyroscopeMinAngleY: -45,
+          gyroscopeMaxAngleY: 45,
+        });
+      </script>
+      <script src="./script/bublle.js"></script>
+    </main>
+
+    <div id="footer"></div>
   </body>
 </html>

@@ -10,7 +10,7 @@
     {
       "indice": "2",
       "image": "./lh1812.webp",
-      "reponse": "kinder surprise",
+      "reponse": "kinder",
       "indice1": "A monter parfois",
       "indice2": "toute ma jeunesse"
     },
@@ -45,9 +45,9 @@
     {
       "indice": "7",
       "image": "./lh1672.webp",
-      "reponse": "surface",
-      "indice1": "je sais plus",
-      "indice2": "ecrit surface"
+      "reponse": "carotte",
+      "indice1": "pour avancer",
+      "indice2": "les tabacs en on une "
     },
     {
       "indice": "8",
@@ -108,16 +108,16 @@
     {
       "indice": "16",
       "image": "./lh2100.webp",
-      "reponse": "fleur ",
-      "indice1": "je sais plus ",
-      "indice2": "ecrit fleur"
+      "reponse": "paquerette ",
+      "indice1": "dans les prés",
+      "indice2": " un peu, beaucoup.."
     },
     {
       "indice": "17",
       "image": "./lh2107.webp",
-      "reponse": "rayure",
-      "indice1": "je ne sais plus ",
-      "indice2": "ecrit rayure"
+      "reponse": "agrafes",
+      "indice1": "Avec des feuilles",
+      "indice2": "Je relis"
     },
     {
       "indice": "18",
@@ -143,7 +143,7 @@
     {
       "indice": "21",
       "image": "./lh2446.webp",
-      "reponse": "queue de tomate",
+      "reponse": "tomate",
       "indice1": "tout rouge ",
       "indice2": "une tige"
     },
@@ -167,6 +167,27 @@
       "reponse": "avocat",
       "indice1": "du mexique",
       "indice2": "gros noyau"
+    },
+    {
+      "indice": "25",
+      "image": "./lh1708.jpg",
+      "reponse": "saliere",
+      "indice1": "de mer",
+      "indice2": "sur la table"
+    },
+    {
+      "indice": "26",
+      "image": "./lh1940.jpg",
+      "reponse": "fromage",
+      "indice1": "de chevre parfois",
+      "indice2": "avec du pain"
+    },
+    {
+      "indice": "27",
+      "image": "./lh1853.jpg",
+      "reponse": "Captsule",
+      "indice1": "Utile pour une biere",
+      "indice2": "pschitt"
     }
   ]
 }

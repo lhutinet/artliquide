@@ -1,16 +1,27 @@
 .mystere {
+  h1 {
+    margin: 0;
+  }
+
   h2 {
     text-align: center;
     color: black;
     margin: 20px auto;
     font-size: 2rem;
   }
-  p {
-    font-size: 1.5rem;
-  }
+
+  // .presentation {
+  //   width: 90%;
+  //   font-size: 1.1rem;
+  //   background: $color2;
+  //   border-radius: 20px;
+  //   padding: 20px;
+  //   box-shadow: $shadow1;
+
+  // }
 
   #nombreimage {
-    margin: 10px;
+    margin: 5px;
     font-size: 1.2rem;
     text-align: center;
   }
@@ -22,21 +33,31 @@
   form {
     display: flex;
     flex-direction: column;
+
+
+    .containerPhoto {
+
+      border: 10px solid white;
+      width: 320px;
+      height: 480px;
+      /* background: rgb(60, 191, 238); */
+      /* background: "src:"./lh1634-2.webp"; */
+      transform: translateY(-0px);
+
+
+    }
   }
 
-  .containerPhoto {
-    border: 10px solid white;
-    width: 400px;
-    height: 600px;
-    /* background: rgb(60, 191, 238); */
-    /* background: "src:"./lh1634-2.webp"; */
-    margin: 20px;
-  }
+  // p {
+  //   padding-top: 30px;
+  // }
+
   label {
     margin: 10px;
     font-size: 1.2rem;
     text-align: center;
   }
+
   input {
     min-width: 300px;
     height: 40px;
@@ -44,7 +65,7 @@
     border-radius: 20px;
     font-size: 1.2rem;
     text-align: center;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 1);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 1), $shadow1;
 
     :focus {
       border: none;

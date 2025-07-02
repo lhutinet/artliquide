@@ -1,0 +1,44 @@
+.bande {
+
+    bottom: 130px;
+    display: flex;
+    width: 100vh;
+    min-height: 70px;
+    align-items: center;
+    box-shadow: $shadow1;
+    background: rgba(243, 243, 243, 0.3);
+    justify-content: center;
+    transform: translateY(150px);
+    border-radius: 15px;
+
+
+    p {
+        text-align: left;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    a {
+        color: black;
+        text-align: left;
+        padding: 10px;
+        margin: 10px;
+
+        &:hover {
+            color: blueviolet;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+
+        width: 100%;
+        margin: 0;
+        // padding: 20px;
+        box-shadow: $shadow1;
+        border-radius: 15px;
+        flex-direction: column;
+        text-align: center;
+        // background: red;
+
+    }
+}

@@ -1,235 +1,372 @@
-.container {
-  display: flex;
+main {
+  // position: relative;
+  top: 100px;
+  transform: translateY(100px);
 
-  flex-wrap: wrap;
-  justify-content: space-around;
 
-  .containerPhoto {
+
+  .container {
     display: flex;
-    z-index: 1;
-    width: 320px;
-    height: 480px;
-    flex-direction: column;
-    /* filter: blur(1px); */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
 
-    .imgIndex {
-      display: block;
+    .containerPhoto {
+      display: flex;
+      z-index: 1;
       width: 320px;
       height: 480px;
-      position: absolute;
+      flex-direction: column;
+      transform: translateY(50px);
 
-      text-decoration: none;
+
+      /* filter: blur(1px); */
+
+
+      .imgIndex {
+        display: block;
+        width: 320px;
+        height: 480px;
+        position: absolute;
+        text-decoration: none;
+        border-radius: 20px;
+      }
+    }
+
+    .titrePhoto {
+      // background-color: red;
+      // color: rgb(26, 26, 26);
+      margin: 20px;
+      text-align: center;
+
+      &:hover {
+        color: rgb(26, 26, 26);
+        cursor: pointer;
+      }
     }
   }
-  .titrePhoto {
-    // background-color: red;
-    color: rgb(26, 26, 26);
-    margin: 20px;
-    text-align: center;
 
-    &:hover {
-      color: rgb(26, 26, 26);
+
+
+
+  #imgGoutte,
+  #imgVoyage,
+  #imgMystère,
+  #imgAnimaux {
+    min-width: 100%;
+    height: 100%;
+    box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+    border-radius: 20px;
+    border-top: 1px solid rgb(134, 231, 248);
+    border-left: 1px solid rgb(134, 231, 248);
+
+
+    &:active {
       cursor: pointer;
+      transform: scale(1.04);
+      border: solid 2px rgba(52, 123, 255, 0.87);
+      box-shadow: 21px 16px 45px 5px rgba(243, 142, 11, 0.52);
+      backdrop-filter: blur(5px);
+
+
+
+
     }
+
+    //   &:hover {
+    //     transform: scale(1.02);
+
+    //     animation: bounce-top 2s both
+    //   }
+
+    //   @keyframes bounce-top {
+    //     0% {
+    //       transform: translateY(-45px);
+    //       animation-timing-function: ease-in;
+    //       opacity: 1
+    //     }
+
+    //     24% {
+    //       opacity: 1
+    //     }
+
+    //     40% {
+    //       transform: translateY(-24px);
+    //       animation-timing-function: ease-in
+    //     }
+
+    //     65% {
+    //       transform: translateY(-12px);
+    //       animation-timing-function: ease-in
+    //     }
+
+    //     82% {
+    //       transform: translateY(-6px);
+    //       animation-timing-function: ease-in
+    //     }
+
+    //     93% {
+    //       transform: translateY(-4px);
+    //       animation-timing-function: ease-in
+    //     }
+
+    //     25%,
+    //     55%,
+    //     75%,
+    //     87% {
+    //       transform: translateY(0);
+    //       animation-timing-function: ease-out
+    //     }
+
+    //     100% {
+    //       transform: translateY(0);
+    //       animation-timing-function: ease-out;
+    //       opacity: 1
+    //     }
+    //   }
+
+
+  }
+
+
+  #imgGoutte {
+    background: url(./img/21-01-10-lh6608.jpg) center/cover;
+
+
+  }
+
+  #imgVoyage {
+    background: url(./img/lh3460.jpg) center/cover;
+  }
+
+  #imgMystère {
+    background: url(./img/lh2510-avec-accentuation-bruit.jpg) center/cover;
+  }
+
+  #imgAnimaux {
+    background: url(./img/animaux/lh0335-2.jpg) center/cover;
+
+  }
+
+  #informations {
+    text-align: center;
+    max-width: 850px;
+    border: 4px solid $color2;
+    // transform: translateY(50px);
+    margin-top: 50px;
+
+    a {
+      color: blue;
+    }
+  }
+
+
+
+
+  .bio {
+    max-width: 70%;
+    background: #ffffff9d;
+    margin: 50px auto 20px auto;
+    padding: 20px;
+    box-shadow: $shadow1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+
+    p {
+      color: $colorB;
+    }
+
+    img {
+      width: 200px;
+      height: 267px;
+      border-radius: 10px;
+      box-shadow: $shadow1;
+    }
+
+    a {
+      color: blue;
+    }
+
+    @media screen and (max-width: 600px) {
+      max-width: 95%;
+      margin: 10px auto;
+      padding: 20px;
+      box-shadow: $shadow1;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+
+
+    }
+
+
+
+
+    h1 {
+      text-align: center;
+      margin: 10px;
+    }
+
+    p {
+      text-align: justify;
+      margin: 10px;
+    }
+
+    .photo {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: $shadow1;
+      }
+    }
+  }
+
+
+
+
+}
+
+
+#legales {
+  max-width: 900px;
+
+  div {
+    box-shadow: $shadow1;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    background: $color2 ;
+
+
+  }
+
+
+}
+
+#exposition {
+  min-width: 80%;
+
+  .gallery {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 320px;
+      width: auto;
+    }
+
+
   }
 
   @media screen and (max-width: 600px) {
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 20px;
+    box-shadow: $shadow1;
+    border-radius: 20px;
+
     flex-direction: column;
 
-    .containerPhoto {
-      transform: scale(0.7);
-    }
-  }
-}
+    .gallery {
+      display: flex;
+      flex-direction: column;
 
-#imgGoutte {
-  min-width: 100%;
-  height: 100%;
-  /* background: red; */
-  background: url(./img/21-01-10-lh6608.jpg) center/cover;
-  box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-}
+      img {
 
-#imgVoyage {
-  min-width: 100%;
-  height: 100%;
-  background: url(./img/lh3460.jpg) center/cover;
-  box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-}
-
-#imgMystère {
-  min-width: 100%;
-  height: 100%;
-  background: url(./img/lh2510-avec-accentuation-bruit.jpg) center/cover;
-  box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-}
-
-// #imgCambodge {
-//   min-width: 100%;
-//   height: 100%;
-//   background: url(./img/cambodge/_cambodge.jpg) center/cover;
-//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-// }
-// #imgCuba {
-//   min-width: 100%;
-//   height: 100%;
-//   background: url(./img/cuba/_Cuba.jpg) center/cover;
-//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-// }
-// #imgMaroc {
-//   min-width: 100%;
-//   height: 100%;
-//   background: url(./img/Maroc/_maroc.jpg) center/cover;
-//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-// }
-// #imgKenya {
-//   min-width: 100%;
-//   height: 100%;
-//   background: url(./img/kenya/_kenya.jpg) center/cover;
-//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-// }
-// #imgIslande {
-//   min-width: 100%;
-//   height: 100%;
-//   background: url(./img/islande/_islande.jpg) center/cover;
-//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-// }
-// #imgReunion {
-//   min-width: 100%;
-//   height: 100%;
-//   background: url(./img/laReunion/_reunion.jpg) center/cover;
-//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-// }
-// #imgLofoten {
-//   min-width: 100%;
-//   height: 100%;
-//   background: url(./img/lofoten/_lofoten.jpg) center/cover;
-//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-// }
-// #imgBretagne {
-//   min-width: 100%;
-//   height: 100%;
-//   background: url(./img/bretagne/_bretagne.jpg) center/cover;
-//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-// }
-// #imgBretagne2 {
-//   min-width: 100%;
-//   height: 100%;
-//   background: url(./img/bretagne2/_bretagne2.webp) center/cover;
-//   box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
-// }
-
-.bande {
-  display: flex;
-  min-width: 100%;
-  height: 70px;
-  background: rgba(0, 0, 255, 0.1);
-  align-items: center;
-  p {
-    text-align: right;
-    padding: 10px;
-
-    a {
-      color: black;
-      text-align: left;
-      padding: 10px;
-      :hover {
-        color: blueviolet;
+        width: 90%;
+        height: auto;
       }
     }
+
+
+
+
+
+
+
   }
-  ul {
-    display: flex;
-    margin: 20px 150px 20px 0;
-    width: 150px;
-    a {
-      color: black;
-      :hover {
-        color: blueviolet;
-      }
-    }
-  }
+
 }
-#boutique {
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: justify;
+
+.encore {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-items: center;
+  // background: rgb(255, 0, 0);
+
   margin: 20px;
 
-  // table {
-  //   border: 2px solid black;
-  //   background-color: rgba(108, 108, 245, 0.03);
-  //   margin: 20px;
-  //   box-shadow: $shadow2;
+  .fiche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $color2;
+    box-shadow: $shadow1;
+    border-radius: 20px;
+    width: 350px;
+    height: 300px;
+    margin: 5px;
 
-  //   td {
-  //     border: 0.1px solid black;
-  //     margin: 0.1px;
-  //     box-shadow: $shadow2;
-  //     padding: 10px 5px;
+    a {
+      color: black
+    }
 
-  //     background-color: rgba(152, 152, 242, 0.05);
-  //   }
-  // }
-}
-table {
-  border: 4px solid #55555527;
-  background-color: #55555534;
-  min-width: 400px;
-  text-align: center;
-  border-collapse: collapse;
-  margin: 30px;
-}
-table td,
-table th {
-  border: 1px solid #555555;
-  padding: 5px 10px;
-}
-table tbody td {
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffffff;
-}
-table td:nth-child(even) {
-  background: #398aa4;
-}
+    img {
+      width: 300px;
+      height: auto;
+      margin: 10px;
 
-table.steelBlueCols tfoot td {
-  font-size: 13px;
-}
-table.steelBlueCols tfoot .links {
-  text-align: right;
-}
-table.steelBlueCols tfoot .links a {
-  // display: inline-block;
-  background: #ffffff;
-  color: #398aa4;
-  padding: 2px 8px;
-  border-radius: 5px;
-}
 
-.containerSpreat {
-  display: block;
-  background: red;
-  max-width: 75%;
-  height: 200px;
-  background: url(./img/spreatshirt.jpg) center/cover;
 
-  a {
-    display: block;
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    text-decoration: none;
-
-    .imgIndex {
-      display: block;
-      width: 320px;
-      height: 480px;
-      position: absolute;
-      text-decoration: none;
     }
   }
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .modal img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+
+  .modal:target {
+    display: flex;
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+    // transition: background 0.3s;
+  }
+
+  .close:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+
 }

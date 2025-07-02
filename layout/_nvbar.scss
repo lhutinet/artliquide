@@ -3,10 +3,15 @@ nav {
   min-width: 100%;
   margin: 0 auto;
   background: transparent;
-  position: sticky;
+  background: $color1;
+  left: 0;
   top: 0px;
   z-index: 100;
   font-family: "Merriweather", serif;
+  position: fixed;
+  transform: translateY(-20px);
+
+
 
   ul {
     display: flex;
@@ -16,6 +21,14 @@ nav {
     max-width: 100%;
     background: transparent;
     z-index: 100;
+
+
+    img {
+      height: 80x;
+      width: 80px;
+      filter: invert(100%);
+
+    }
 
     li {
       float: left;
@@ -34,30 +47,29 @@ nav {
   a {
     display: block;
     text-decoration: none;
-    color: black;
+    // color: black;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
     position: sticky;
     z-index: 100;
 
     &:hover {
-      color: orange;
-      border-bottom: 2px solid gold;
+      color: blueviolet;
+      border-bottom: 2px solid blueviolet;
     }
   }
 
-  > ul li:hover .sous {
+  >ul li:hover .sous {
     display: block;
   }
+
   .sous {
     display: none;
     box-shadow: 0px 1px 2px #ccc;
-    background: linear-gradient(
-      to right,
-      rgb(0, 117, 206) 0%,
-      rgb(44, 161, 164) 75%,
-      rgb(0, 117, 206) 100%
-    );
+    background: linear-gradient(to right,
+        rgb(0, 117, 206) 0%,
+        rgb(44, 161, 164) 75%,
+        rgb(0, 117, 206) 100%);
     position: absolute;
     width: 100%;
     z-index: 100;
@@ -79,59 +91,80 @@ nav {
     }
   }
 
-  .deroulant > a::after {
+  .deroulant>a::after {
     content: " ▼";
     font-size: 12px;
     z-index: 100;
+
   }
 
   @media screen and (max-width: 400px) {
     font-size: 0.8rem;
+
+
+
   }
 }
 
 #navSocial {
+  display: flex;
+
   #social {
-    padding: 2px;
+    // padding: 2px;
+
     display: flex;
-    width: 150px;
-    right: 25px;
-    transform: translateX(50%);
+    width: 200px;
+    right: 30px;
+    // transform: translateX(25%);
     z-index: 1;
+
+
     a {
       color: black;
+
+      i {
+        height: 30px;
+        width: 30px;
+      }
+
       &:hover {
         color: blueviolet;
       }
     }
+
+    #toggleBubbleMaker {
+      width: 150px;
+      color: $colorW;
+    }
+
+
+
   }
+
+
+
 }
 
-/* Styles de base pour la navigation */
-// nav {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 1rem;
-//   background-color: #333;
-//   color: white;
-// }
+/* Media query pour écrans supérieurs à 400px */
+@media (min-width: 600px) {
+  #navSocial {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    /* Ajustez cette valeur selon vos besoins */
+    right: 200px;
 
-// nav ul {
-//   list-style: none;
-//   display: flex;
-//   gap: 1rem;
-// }
+    a {
 
-// nav ul li {
-//   display: inline;
-// }
+      padding: 0;
+      height: 30px;
 
-// nav a {
-//   text-decoration: none;
-//   color: white;
-//   font-weight: bold;
-// }
+
+    }
+
+  }
+}
 
 /* Icône hamburger */
 .hamburger {
@@ -139,14 +172,17 @@ nav {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+
+
 }
 
-.hamburger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: white;
-}
 
 /* Media query pour petits écrans */
 @media (max-width: 600px) {
@@ -158,16 +194,29 @@ nav {
     display: none;
     flex-direction: column;
     gap: 0.5rem;
-    width: 50%;
-    // background-color: rgba(59, 59, 59, 0.5);
+    background-color: $color1;
     position: absolute;
-    top: 60px;
+    border-radius: 10px;
+    top: 50px;
     left: 0;
-    padding: 1rem;
+    margin: 10px;
+    padding: 10px;
+
+
+    &:hover {
+      z-index: 200;
+
+    }
+  }
+
+  .sous {
+    display: none;
+    transform: translate(50px, -100px);
   }
 
   nav ul.active {
     display: flex;
+    background: $color1;
   }
 
   nav ul li {
@@ -180,4 +229,41 @@ nav {
     width: 100%;
     text-align: left;
   }
+
+  #navSocial {
+    // position: absolute;
+    right: 120px;
+    max-width: 150px;
+    min-width: 80px;
+
+    #social {
+      display: flex;
+      flex-direction: row;
+
+      z-index: 1;
+
+      a {
+        color: black;
+
+        i {
+          width: 20px;
+          height: 20px;
+          margin: 0;
+          padding: 0;
+        }
+
+
+
+        &:hover {
+          color: blueviolet;
+        }
+      }
+    }
+
+
+
+  }
+
+
+
 }

@@ -1,15 +1,27 @@
-$color1: linear-gradient(
-  to right,
-  rgb(0, 117, 206) 0%,
-  rgb(44, 161, 164) 50%,
-  rgb(0, 117, 206) 100%
-);
-$shadow1: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+$color1: linear-gradient(to right,
+    rgb(0, 117, 206) 0%,
+    rgb(44, 161, 164) 50%,
+    rgb(0, 117, 206) 100%);
+
+$color2: rgba(243, 243, 243, 0.685);
+$colorW: rgb(221, 221, 221);
+$colorB: rgb(28, 28, 28);
+
+
+$shadow1: 10px 7px 20px 0px rgba(0, 0, 0, 0.4);
 $shadow2: 21px 16px 45px 5px rgba(0, 0, 0, 0.2);
 
 $textshadow1: 21px 16px 5px rgba(28, 110, 164, 0.52);
 
-@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Handjet:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Handjet:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@font-face {
+  font-family: 'Bad Script';
+  src: url('./font/badscript-regular.ttf') format('woff2'), ;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -17,24 +29,340 @@ $textshadow1: 21px 16px 5px rgba(28, 110, 164, 0.52);
   margin: 0 auto;
   box-sizing: border-box;
   list-style-type: none;
+  color: $colorW;
 }
+
+
 
 /* test  */
 body {
   background: $color1;
+  display: flex;
+  flex-direction: column; // overflow: hidden;
+
+
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.1rem;
+    margin: 10px auto;
+    overflow: scroll;
+  }
+
+
+
 }
 
 h1 {
   font-family: "Bad Script", serif;
   text-align: center;
-  margin: 50px auto;
+  // margin: 50px auto;
   text-shadow: $textshadow1;
+  margin: 0;
 
   @media screen and (max-width: 600px) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 10px auto;
   }
+
+  span {
+    font-family: "Bad Script", serif;
+  }
+
+
+  .title {
+    font-family: "Bad Script", serif;
+    // font-weight: bold;
+    position: relative;
+  }
+
+  // .hidden-art {
+  //   // visibility: hidden;
+  //   /* Cache le mot ART */
+  //   position: absolute;
+  //   transform: translateX(-100px);
+  //   // left: -9999px;
+  //   /* Masque en dehors de la vue */
+  //   animation: hidden-art 6s infinite;
+  // }
+
+  .photographie {
+    display: inline-block;
+    position: relative;
+  }
+
+  .highlight {
+    font-family: "Bad Script", serif;
+    // color: rgb(0, 0, 0);
+    color: $colorW;
+    /* Couleur rouge pour les lettres "art" */
+    position: relative;
+
+
+  }
+
+  .imgText {
+
+    min-width: 100%;
+    height: 100%;
+    box-shadow: 21px 16px 45px 5px rgba(0, 0, 0, 0.52);
+    border-radius: 10px;
+    border-top: 1px solid $colorW;
+    border-left: 1px solid $colorW;
+
+  }
+
+  #liquide {
+    /* Animation des lettres "art" */
+    position: absolute;
+
+    transform: translateX(-150px);
+  }
+
+
+
+
+
+  #A {
+    /* Animation des lettres "art" */
+    position: absolute;
+    animation: highlight-art-A 6s infinite;
+    // transform: translateX(0px);
+  }
+
+  #R {
+    /* Animation des lettres "art" */
+    position: absolute;
+    animation: highlight-art-R 6s infinite;
+    // transform: translateX(5px);
+  }
+
+  #T {
+    /* Animation des lettres "art" */
+    position: absolute;
+    animation: highlight-art-T 6s infinite;
+    // transform: translateX(250px);
+
+  }
+
+
+
+
+
+
+
+  @keyframes highlight-art-A {
+
+    0% {
+      // color: rgb(0, 0, 0);
+      transform: translateX(97px);
+
+    }
+
+    30% {
+      transform: translateX(-325px);
+      // color: black;
+      color: $colorB;
+    }
+
+    70% {
+      transform: translateX(-325px);
+      // color: black;
+    }
+
+    90% {
+      transform: translateX(97px);
+      // color: black;
+    }
+
+    100% {
+      transform: translateX(97px);
+      // color: black;
+      color: $colorW;
+    }
+
+  }
+
+
+  @keyframes highlight-art-R {
+
+    0% {
+      // color: rgb(0, 0, 0);
+      transform: translateX(82px);
+
+    }
+
+    // 10% {
+    //   color: rgb(0, 0, 0);
+    //   transform: translateX(0px);
+    // }
+
+
+    50% {
+      transform: translateX(-290px);
+
+      color: $colorB;
+    }
+
+    70% {
+      transform: translateX(-290px);
+      // color: black;
+    }
+
+    90% {
+      transform: translateX(82px);
+      // color: black;
+    }
+
+    100% {
+      transform: translateX(82px);
+      // color: black;
+    }
+  }
+
+
+
+  @keyframes highlight-art-T {
+
+    0% {
+      // color: rgb(0, 0, 0);
+      color: $colorW;
+      transform: translateX(23px);
+    }
+
+
+
+
+    50% {
+      transform: translateX(-255px);
+      // color: black;
+      color: $colorB;
+    }
+
+    70% {
+      transform: translateX(-255px);
+      // color: black;
+    }
+
+
+
+    100% {
+      transform: translateX(23px);
+      // color: black;
+    }
+
+
+
+
+
+
+  }
+
+  @media screen and (max-width: 600px) {
+
+    #liquide {
+      /* Animation des lettres "art" */
+
+
+      transform: translateX(-100px);
+    }
+
+
+
+    @keyframes highlight-art-A {
+
+      0% {
+        transform: translateX(48px);
+        // color: black;
+      }
+
+      30% {
+        transform: translateX(-165px);
+        // color: black;
+        color: $colorB;
+      }
+
+      70% {
+        transform: translateX(-165px);
+        // color: black;
+      }
+
+      100% {
+        transform: translateX(48px);
+        // color: black;
+      }
+
+    }
+
+    @keyframes highlight-art-R {
+
+      0% {
+        transform: translateX(39px);
+        // color: black;
+      }
+
+
+
+      30% {
+        transform: translateX(-150px);
+        // color: black;
+        color: $colorB;
+      }
+
+      70% {
+        transform: translateX(-150px);
+        // color: black;
+      }
+
+
+
+      100% {
+        transform: translateX(39px);
+        // color: black;
+      }
+
+    }
+
+    @keyframes highlight-art-T {
+
+      0% {
+        transform: translateX(3px);
+        // color: black;
+      }
+
+      30% {
+        transform: translateX(-136px);
+        // color: black;
+        color: $colorB;
+      }
+
+      30% {
+        transform: translateX(-136px);
+        // color: black;
+      }
+
+      70% {
+        transform: translateX(-136px);
+        // color: black;
+      }
+
+      100% {
+        transform: translateX(3px);
+        // color: black;
+      }
+
+    }
+
+
+
+
+  }
+
+
+
 }
+
+
+
 
 iframe {
   width: 100%;
@@ -43,14 +371,15 @@ iframe {
   top: 0;
   height: 50px;
 }
+
 button {
-  z-index: 1000;
+  z-index: 1;
   width: 250px;
-  color: rgb(255, 255, 255);
-  font-size: 21px;
+  color: $colorW;
+  font-size: 0.8rem;
   line-height: 21px;
-  padding: 9px;
-  margin: 20px auto;
+  padding: 2px;
+  margin: 10px auto;
   border-radius: 16px;
   font-family: Georgia, serif;
   font-weight: normal;
@@ -58,16 +387,22 @@ button {
   font-style: normal;
   font-variant: normal;
   text-transform: none;
-  background-image: linear-gradient(
-    to right,
-    rgb(28, 110, 164) 0%,
-    rgb(35, 136, 203) 50%,
-    rgb(20, 78, 117) 100%
-  );
+  background-image: linear-gradient(to right,
+      rgb(28, 110, 164) 0%,
+      rgb(35, 136, 203) 50%,
+      rgb(20, 78, 117) 100%);
   box-shadow: rgba(0, 0, 0, 0.48) 10px 5px 15px 0px;
   border: 2px solid rgb(28, 110, 164);
   display: inline-block;
-  :hover {
-    background: red;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 600px) {
+    margin: 0;
+    width: 150px;
+
   }
 }

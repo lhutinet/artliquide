@@ -10,7 +10,7 @@
     />
     <!-- Google tag (gtag.js) -->
     <script
-      async
+      defer
       src="https://www.googletagmanager.com/gtag/js?id=G-DLX297GV89"
     ></script>
     <script>
@@ -21,29 +21,68 @@
       gtag("js", new Date());
 
       gtag("config", "G-DLX297GV89");
+      gtag("config", "G-XVYJ2BY106");
     </script>
-    <title>jeu mystère</title>
+    <title>
+      Jeu mystère art liquide photographie, Laurent Hutinet, photographe
+      spécialisé dans les collisions de gouttes d'eau et de voyage
+    </title>
+    <meta
+      name="description La section Jeu mystère du site Art Liquide
+    Photographie propose un jeu interactif où les visiteurs doivent deviner le
+    contenu de photos mystérieuses. Chaque image est accompagnée de trois
+    tentatives de réponse, avec des indices disponibles après les deux premières
+    réponses incorrectes. Ce jeu offre une manière ludique de découvrir
+    certaines œuvres de Laurent Hutinet tout en permettant au photographe de
+    perfectionner ses compétences en codage. "
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="navbar"></div>
     <script src="./script/navb.js"></script>
+    <!-- <script src="scripts/menu.js" defer></script> -->
     <main class="mystere">
-      <h1>jeu mystère</h1>
+      <div class="content"></div>
+      <h1>-- Jeu mystère --</h1>
+      <div class="presentation">
+        <p>
+          Cette section de jeu photo mystère est pour vous une manière ludique
+          de découvrir certaines photos. <br /><br />Pour moi, c'est également
+          une excellente opportunité pour m'exercer à coder un jeu.
+        </p>
+        <p>
+          Le principe est simple : essayez de deviner ce que représentent les
+          images affichées. Vous avez trois essais. Le premier sans aide, puis
+          les deux suivants avec un indice.
+        </p>
+      </div>
+
       <div class="container">
         <form action="">
           <span id="nombreimage"></span>
           <div class="containerPhoto"></div>
+          <p>Vous pouvez donner jusqu'à trois réponses, un mot suffit.</p>
           <p id="infoRes"></p>
-          <p id="indice">indice</p>
-          <label for="inputRes">votre reponse</label>
-          <input type="text" id="inputRes" autocomplete="off" />
-          <button type="submit">je valide</button>
+          <p id="indice">Indice</p>
+          <label for="inputRes"></label>
+          <input
+            type="text"
+            id="inputRes"
+            placeholder="votre reponse"
+            autocomplete="off"
+          />
+          <button type="submit">Validez</button>
 
-          <p id="resuScore">mon score est de</p>
+          <p id="resuScore">score :</p>
         </form>
       </div>
     </main>
+
     <script src="./script/mystere.js"></script>
+    <!-- <script src="./script/bublle.js"></script> -->
+    <script src="./script/pluie.js"></script>
+    <div id="footer"></div>
   </body>
 </html>

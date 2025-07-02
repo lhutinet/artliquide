@@ -10,7 +10,7 @@
     />
     <!-- Google tag (gtag.js) -->
     <script
-      async
+      defer
       src="https://www.googletagmanager.com/gtag/js?id=G-DLX297GV89"
     ></script>
     <script>
@@ -21,29 +21,32 @@
       gtag("js", new Date());
 
       gtag("config", "G-DLX297GV89");
+      gtag("config", "G-XVYJ2BY106");
     </script>
     <title>
-      art liquide photographie, Laurent Hutinet, photographe spécialisé dans les
-      collisions de gouttes d'eau et de voyage
+      photo art liquide photographie, Laurent Hutinet, photographe spécialisé
+      dans les collisions de gouttes d'eau et de voyage
     </title>
+    <meta name="La section Photos du site Art Liquide Photographie présente une
+    galerie diversifiée des œuvres de Laurent Hutinet, photographe spécialisé
+    dans les collisions de gouttes d'eau et les voyages. Les images sont
+    organisées par thèmes tels que Personnage, Montage, et divers animaux,
+    permettant aux visiteurs de naviguer facilement selon leurs intérêts. Cette
+    organisation offre une expérience enrichissante pour découvrir la variété et
+    la créativité des photographies proposées. />
 
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div id="navbar"></div>
+    <script src="./script/navb.js"></script>
+    <script src="scripts/menu.js" defer></script>
     <main>
-      <script src="./script/navb.js"></script>
-      <!-- <div class="filter-container">
-        <button id="filter-personnage" data-filter="voiture">voiture</button>
-        <button id="filter-montage" data-filter="couleur">couleur</button>
-        <select id="location-filter">
-          <option value="">Tous les lieux</option>
-          <option value="village">Village</option>
-          <option value="temple">Temple</option>
-          <option value="plage">Plage</option>
-          <option value="rue">Rue</option>
-        </select>
+      <!-- <div class="content">
+        <div class="drop"></div>
+        <div class="wave"></div>
       </div> -->
+      <h1></h1>
 
       <div id="zoom-container" class="zoom-container">
         <button id="prev-photo" class="zoom-arrow">◀</button>
@@ -51,10 +54,47 @@
         <button id="next-photo" class="zoom-arrow">▶</button>
       </div>
 
+      <div class="filter-container">
+        <select name="Select" id="theme-Select" class="hiddenSelect">
+          <option value="">Sélectionner un thème</option>
+          <option value="personnage">Personnage</option>
+          <option
+            value="m
+          ontage"
+          >
+            Montage
+          </option>
+        </select>
+
+        <select name="Select" id="theme-SelectAnimaux" class="hiddenSelect">
+          <option value="">Sélectionner un thème</option>
+          <option value="elephant">Elephant</option>
+          <option value="girafe">Girafe</option>
+          <option value="zebre">Zebre</option>
+          <option value="antilope">Antilope</option>
+          <option value="lezard">Lezard</option>
+          <option value="Cheval">Cheval</option>
+          <option value="Singe">Singe</option>
+
+          <option value="oiseau">Oiseau</option>
+          <option value="felin">Felin</option>
+          <option value="insecte">Insecte</option>
+        </select>
+
+        <button id="filter-nb">Noir et Blanc</button>
+        <button id="filter-couleur">Couleur</button>
+        <button id="filter-all">Toutes les photos</button>
+      </div>
+
+      <div class="collapsible-container"><p class="presentation"></p></div>
+      <span class="read-more-button" onclick="toggleText()">Lire plus</span>
+
       <div id="gallery-container" class="gallery-container"></div>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    <script src="./index.js"></script>
+    <script src="./script/photo.js"></script>
+    <script src="./script/description.js"></script>
+
+    <div id="footer"></div>
   </body>
 </html>
