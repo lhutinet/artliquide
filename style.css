@@ -406,7 +406,6 @@ button:hover {
 nav {
   min-width: 100%;
   margin: 0 auto;
-  background: transparent;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 117, 206)), color-stop(50%, rgb(44, 161, 164)), to(rgb(0, 117, 206)));
   background: linear-gradient(to right, rgb(0, 117, 206) 0%, rgb(44, 161, 164) 50%, rgb(0, 117, 206) 100%);
   left: 0;
@@ -421,19 +420,23 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
   list-style-type: none;
   max-width: 100%;
   background: transparent;
   z-index: 100;
 }
 nav ul img {
-  height: 80x;
+  height: 80px;
   width: 80px;
   -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -462,10 +465,18 @@ nav a:hover {
   border-bottom: 2px solid blueviolet;
 }
 nav > ul li:hover .sous {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 nav .sous {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-box-shadow: 0px 1px 2px #ccc;
           box-shadow: 0px 1px 2px #ccc;
   background: -webkit-gradient(linear, left top, right top, from(rgb(0, 117, 206)), color-stop(75%, rgb(44, 161, 164)), to(rgb(0, 117, 206)));
@@ -473,6 +484,15 @@ nav .sous {
   position: absolute;
   width: 100%;
   z-index: 100;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 nav .sous li {
   float: none;
@@ -484,8 +504,7 @@ nav .sous a {
   border-bottom: none;
 }
 nav .sous a:hover {
-  border-bottom: none;
-  background-color: RGBa(200, 200, 200, 0.1);
+  background-color: rgba(200, 200, 200, 0.1);
 }
 nav .deroulant > a::after {
   content: " ▼";
@@ -538,7 +557,6 @@ nav .deroulant > a::after {
             align-items: flex-start;
     position: absolute;
     top: 60px;
-    /* Ajustez cette valeur selon vos besoins */
     right: 200px;
   }
   #navSocial a {
@@ -585,14 +603,6 @@ nav .deroulant > a::after {
     margin: 10px;
     padding: 10px;
   }
-  nav ul:hover {
-    z-index: 200;
-  }
-  .sous {
-    display: none;
-    -webkit-transform: translate(50px, -100px);
-            transform: translate(50px, -100px);
-  }
   nav ul.active {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -608,6 +618,21 @@ nav .deroulant > a::after {
     padding: 0.5rem;
     width: 100%;
     text-align: left;
+  }
+  .sous {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  nav ul li:hover .sous {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(100px, -50px);
+            transform: translate(100px, -50px);
+    width: 100%;
   }
   #navSocial {
     right: 120px;
