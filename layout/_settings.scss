@@ -164,21 +164,24 @@ h1 {
       color: $colorB;
     }
 
-    70% {
-      transform: translateX(-325px);
-      // color: black;
-    }
 
-    90% {
-      transform: translateX(97px);
-      // color: black;
-    }
 
     100% {
-      transform: translateX(97px);
+      transform: translateX(-325px);
+      color: rgba(255, 255, 255, 0);
       // color: black;
-      color: $colorW;
     }
+
+    // 90% {
+    //   transform: translateX(97px);
+    //   // color: black;
+    // }
+
+    // 100% {
+    //   transform: translateX(97px);
+    //   // color: black;
+    //   color: $colorW;
+    // }
 
   }
 
@@ -203,20 +206,22 @@ h1 {
       color: $colorB;
     }
 
-    70% {
-      transform: translateX(-290px);
-      // color: black;
-    }
 
-    90% {
-      transform: translateX(82px);
-      // color: black;
-    }
 
     100% {
-      transform: translateX(82px);
-      // color: black;
+      color: rgba(255, 255, 255, 0);
+      transform: translateX(-290px);
     }
+
+    // 90% {
+    //   transform: translateX(82px);
+    //   // color: black;
+    // }
+
+    // 100% {
+    //   transform: translateX(82px);
+    //   // color: black;
+    // }
   }
 
 
@@ -238,19 +243,22 @@ h1 {
       color: $colorB;
     }
 
-    70% {
-      transform: translateX(-255px);
-      // color: black;
-    }
+    // 70% {
+    //   transform: translateX(-255px);
+    //   // color: black;
+    // }
 
 
+
+    // 100% {
+    //   transform: translateX(23px);
+    //   // color: black;
+    // }
 
     100% {
-      transform: translateX(23px);
-      // color: black;
+      transform: translateX(-255px);
+      color: rgba(255, 255, 255, 0);
     }
-
-
 
 
 
@@ -281,13 +289,13 @@ h1 {
         color: $colorB;
       }
 
-      70% {
-        transform: translateX(-165px);
-        // color: black;
-      }
+
 
       100% {
-        transform: translateX(48px);
+        transform: translateX(-165px);
+        color: rgba(255, 255, 255, 0);
+
+        // transform: translateX(48px);
         // color: black;
       }
 
@@ -308,16 +316,15 @@ h1 {
         color: $colorB;
       }
 
-      70% {
-        transform: translateX(-150px);
-        // color: black;
-      }
 
 
 
       100% {
-        transform: translateX(39px);
+        // transform: translateX(39px);
         // color: black;
+        transform: translateX(-150px);
+        color: rgba(255, 255, 255, 0);
+
       }
 
     }
@@ -340,13 +347,12 @@ h1 {
         // color: black;
       }
 
-      70% {
-        transform: translateX(-136px);
-        // color: black;
-      }
 
       100% {
-        transform: translateX(3px);
+        // transform: translateX(3px);
+        transform: translateX(-136px);
+        color: rgba(255, 255, 255, 0);
+
         // color: black;
       }
 

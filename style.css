@@ -107,18 +107,10 @@ h1 #T {
             transform: translateX(-325px);
     color: rgb(28, 28, 28);
   }
-  70% {
+  100% {
     -webkit-transform: translateX(-325px);
             transform: translateX(-325px);
-  }
-  90% {
-    -webkit-transform: translateX(97px);
-            transform: translateX(97px);
-  }
-  100% {
-    -webkit-transform: translateX(97px);
-            transform: translateX(97px);
-    color: rgb(221, 221, 221);
+    color: rgba(255, 255, 255, 0);
   }
 }
 @keyframes highlight-art-A {
@@ -131,18 +123,10 @@ h1 #T {
             transform: translateX(-325px);
     color: rgb(28, 28, 28);
   }
-  70% {
+  100% {
     -webkit-transform: translateX(-325px);
             transform: translateX(-325px);
-  }
-  90% {
-    -webkit-transform: translateX(97px);
-            transform: translateX(97px);
-  }
-  100% {
-    -webkit-transform: translateX(97px);
-            transform: translateX(97px);
-    color: rgb(221, 221, 221);
+    color: rgba(255, 255, 255, 0);
   }
 }
 @-webkit-keyframes highlight-art-R {
@@ -155,17 +139,10 @@ h1 #T {
             transform: translateX(-290px);
     color: rgb(28, 28, 28);
   }
-  70% {
+  100% {
+    color: rgba(255, 255, 255, 0);
     -webkit-transform: translateX(-290px);
             transform: translateX(-290px);
-  }
-  90% {
-    -webkit-transform: translateX(82px);
-            transform: translateX(82px);
-  }
-  100% {
-    -webkit-transform: translateX(82px);
-            transform: translateX(82px);
   }
 }
 @keyframes highlight-art-R {
@@ -178,17 +155,10 @@ h1 #T {
             transform: translateX(-290px);
     color: rgb(28, 28, 28);
   }
-  70% {
+  100% {
+    color: rgba(255, 255, 255, 0);
     -webkit-transform: translateX(-290px);
             transform: translateX(-290px);
-  }
-  90% {
-    -webkit-transform: translateX(82px);
-            transform: translateX(82px);
-  }
-  100% {
-    -webkit-transform: translateX(82px);
-            transform: translateX(82px);
   }
 }
 @-webkit-keyframes highlight-art-T {
@@ -202,13 +172,10 @@ h1 #T {
             transform: translateX(-255px);
     color: rgb(28, 28, 28);
   }
-  70% {
+  100% {
     -webkit-transform: translateX(-255px);
             transform: translateX(-255px);
-  }
-  100% {
-    -webkit-transform: translateX(23px);
-            transform: translateX(23px);
+    color: rgba(255, 255, 255, 0);
   }
 }
 @keyframes highlight-art-T {
@@ -222,13 +189,10 @@ h1 #T {
             transform: translateX(-255px);
     color: rgb(28, 28, 28);
   }
-  70% {
+  100% {
     -webkit-transform: translateX(-255px);
             transform: translateX(-255px);
-  }
-  100% {
-    -webkit-transform: translateX(23px);
-            transform: translateX(23px);
+    color: rgba(255, 255, 255, 0);
   }
 }
 @media screen and (max-width: 600px) {
@@ -247,13 +211,10 @@ h1 #T {
               transform: translateX(-165px);
       color: rgb(28, 28, 28);
     }
-    70% {
+    100% {
       -webkit-transform: translateX(-165px);
               transform: translateX(-165px);
-    }
-    100% {
-      -webkit-transform: translateX(48px);
-              transform: translateX(48px);
+      color: rgba(255, 255, 255, 0);
     }
   }
   @keyframes highlight-art-A {
@@ -266,13 +227,10 @@ h1 #T {
               transform: translateX(-165px);
       color: rgb(28, 28, 28);
     }
-    70% {
+    100% {
       -webkit-transform: translateX(-165px);
               transform: translateX(-165px);
-    }
-    100% {
-      -webkit-transform: translateX(48px);
-              transform: translateX(48px);
+      color: rgba(255, 255, 255, 0);
     }
   }
   @-webkit-keyframes highlight-art-R {
@@ -285,13 +243,10 @@ h1 #T {
               transform: translateX(-150px);
       color: rgb(28, 28, 28);
     }
-    70% {
+    100% {
       -webkit-transform: translateX(-150px);
               transform: translateX(-150px);
-    }
-    100% {
-      -webkit-transform: translateX(39px);
-              transform: translateX(39px);
+      color: rgba(255, 255, 255, 0);
     }
   }
   @keyframes highlight-art-R {
@@ -304,13 +259,10 @@ h1 #T {
               transform: translateX(-150px);
       color: rgb(28, 28, 28);
     }
-    70% {
+    100% {
       -webkit-transform: translateX(-150px);
               transform: translateX(-150px);
-    }
-    100% {
-      -webkit-transform: translateX(39px);
-              transform: translateX(39px);
+      color: rgba(255, 255, 255, 0);
     }
   }
   @-webkit-keyframes highlight-art-T {
@@ -327,13 +279,10 @@ h1 #T {
       -webkit-transform: translateX(-136px);
               transform: translateX(-136px);
     }
-    70% {
+    100% {
       -webkit-transform: translateX(-136px);
               transform: translateX(-136px);
-    }
-    100% {
-      -webkit-transform: translateX(3px);
-              transform: translateX(3px);
+      color: rgba(255, 255, 255, 0);
     }
   }
   @keyframes highlight-art-T {
@@ -350,13 +299,10 @@ h1 #T {
       -webkit-transform: translateX(-136px);
               transform: translateX(-136px);
     }
-    70% {
+    100% {
       -webkit-transform: translateX(-136px);
               transform: translateX(-136px);
-    }
-    100% {
-      -webkit-transform: translateX(3px);
-              transform: translateX(3px);
+      color: rgba(255, 255, 255, 0);
     }
   }
 }
